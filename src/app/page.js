@@ -157,7 +157,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div data-w-id="073af362-6ea5-34e3-4471-301acdd3fa11" style={{ width: "98.5156%", height: "120vh" }}
+        <div data-w-id="073af362-6ea5-34e3-4471-301acdd3fa11" style={{ width: "58.5156%", height: "120vh" }}
           className="hero-clipping-wrapper">
           <div className="hero-wrapper">
             <div className="nav-spacer g-pointer-events-none"></div>
@@ -230,7 +230,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="handlebar_wrapper" style={{ left: "98.5156%" }}>
+        <div className="handlebar_wrapper" style={{ left: "58.5156%" }}>
           <img
           width={40}
             src="https://assets-global.website-files.com/625593a881b8ebd169835ca5/6272dd170459e2734bd53502_handlebar.svg" alt="" className="handlebar_image" /></div>
