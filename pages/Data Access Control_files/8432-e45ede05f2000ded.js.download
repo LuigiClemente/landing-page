@@ -1,0 +1,199 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[8432],{44804:function(e,t,i){"use strict";i.r(t),i.d(t,{CompaniesTicker:function(){return c}});var n=i(11527);i(50959);var o=i(21574),a=i.n(o),r=i(17108),l=i.n(r);let s=a().bind(l()),c=e=>{let{companies:t,className:i}=e;return(0,n.jsx)("div",{className:s("SectionHero__companiesList",i),children:(0,n.jsx)("div",{className:s("SectionHero__companiesSlide"),children:t.map(e=>(0,n.jsx)("img",{className:l().SectionHero__company,src:e.logoDark.replace("dark","grayscale"),alt:`${e.name} logo`},e.name))})})};t.default=c},54801:function(e,t,i){"use strict";i.d(t,{B:function(){return l},u:function(){return s}});var n=i(11527),o=i(8714),a=i.n(o);let r="21007405",l=()=>(0,n.jsx)("div",{className:"hs-container",children:(0,n.jsx)(a(),{region:"na1",portalId:r,formId:"e643e830-09dc-42a9-8c9f-1502262376a6",sfdcCampaignId:"7018c000001MnZSAA0"})}),s=e=>{let{formId:t,sfdcCampaignId:i}=e;return(0,n.jsx)("div",{className:"hs-container",children:(0,n.jsx)(a(),{region:"na1",portalId:r,formId:t,sfdcCampaignId:i})})}},82233:function(e,t,i){"use strict";i.d(t,{g:function(){return x},Z:function(){return y}});var n=i(11527),o=i(50959),a=i(63493),r=i(92909),l=i(17910),s=i.n(l);let c={size:"t1",font:s().style.fontFamily,fill:"#light","--radius":"1x","--grid-gap":"calc(3 * var(--gap))","--content-padding":["6x",,,"3x"],"--h1-font-size":["42px",,,"32px"],"--h1-line-height":["54px",,,"44px"],"--h1-font-weight":700,"--h1-font-family":s().style.fontFamily,"--h2-font-size":["32px",,,"26px"],"--h2-line-height":["44px",,,"36px"],"--h2-font-weight":700,"--h2-font-family":s().style.fontFamily,"--h3-font-size":["26px",,,"20px"],"--h3-line-height":["36px",,,"32px"],"--h3-font-weight":700,"--h3-font-family":s().style.fontFamily,"--h3r-font-size":["26px",,,"22px"],"--h3r-line-height":["36px",,,"30px"],"--h3r-font-weight":400,"--h3r-font-family":s().style.fontFamily,"--h4-font-size":["20px",,,"16px"],"--h4-line-height":["32px",,,"26px"],"--h4-font-weight":700,"--h4-letter-spacing":"0.005em","--h4-font-family":s().style.fontFamily,"--h4m-font-size":["20px",,,"16px"],"--h4m-line-height":["32px",,,"26px"],"--h4m-font-weight":400,"--h4m-font-family":s().style.fontFamily,"--h5-font-size":"16px","--h5-line-height":"26px","--h5-font-weight":700,"--h5-letter-spacing":"0.01em","--h5-font-family":s().style.fontFamily,"--h5m-font-size":"16px","--h5m-line-height":"26px","--h5m-font-weight":500,"--h5m-letter-spacing":"0.005em","--h5m-font-family":s().style.fontFamily,"--h6-font-size":"14px","--h6-line-height":"22px","--h6-font-weight":700,"--h6-letter-spacing":"0.015em","--h6-font-family":s().style.fontFamily,"--h6m-font-size":"14px","--h6m-line-height":"22px","--h6m-font-weight":400,"--h6m-letter-spacing":"0.015em","--h6m-font-family":s().style.fontFamily,"--p1-font-size":["20px",,,"18px"],"--p1-line-height":["32px",,,"28px"],"--p1-font-family":s().style.fontFamily,"--p1-letter-spacing":"0","--p2-font-size":"16px","--p2-line-height":"28px","--p2-font-family":s().style.fontFamily,"--p2-letter-spacing":"0","--p3-font-size":"14px","--p3-line-height":"24px","--p3-font-family":s().style.fontFamily,"--p3-letter-spacing":"0.005em","--t1-font-size":["20px",,,"16px"],"--t1-line-height":["32px",,,"26px"],"--t1-font-family":s().style.fontFamily,"--t1-letter-spacing":"0","--t1m-font-size":["18px",,,"16px"],"--t1m-line-height":["30px",,,"26px"],"--t1m-font-family":s().style.fontFamily,"--t1m-font-weight":"normal","--t1m-letter-spacing":"0","--t2-font-size":"16px","--t2-line-height":"26px","--t2-font-family":s().style.fontFamily,"--t2-font-weight":"normal","--t2-letter-spacing":"0","--t2m-font-size":"16px","--t2m-line-height":"26px","--t2m-font-family":s().style.fontFamily,"--t2m-font-weight":"normal","--t2m-letter-spacing":"0","--t3-font-size":"14px","--t3-line-height":"20px","--t3-font-family":s().style.fontFamily,"--t3-letter-spacing":"0.005em","--t3m-font-size":"14px","--t3m-line-height":"24px","--t3m-font-family":s().style.fontFamily,"--t3m-font-weight":500,"--t3m-letter-spacing":"","--code-font-size":"14px","--code-line-height":"20px","--code-font-family":"var(--font-mono)","--snippet-font-size":"16px","--snippet-line-height":"22px","--snippet-font-family":"var(--font-mono)","--snippet-font-weight":600,"--c1-font-size":["16px",,,"14px"],"--c1-line-height":["26px",,,"22px"],"--c1-text-transform":"uppercase","--c1-letter-spacing":["0.02em",,,"0.03em"],"--c1-font-family":s().style.fontFamily,"--c2-font-size":"14px","--c2-line-height":"22px","--c2-font-weight":400,"--c2-text-transform":"uppercase","--c2-letter-spacing":"0.03em","--c2-font-family":s().style.fontFamily,"--danger-text-color":"var(--pink-color)","--danger-text-color-rgb":"var(--pink-color-rgb)","--dark-color":"rgba(20, 20, 70, 1)","--dark-02-color":"rgba(67, 67, 107, 1)","--dark-03-color":"rgba(114, 114, 144, 1)","--dark-04-color":"rgba(161, 161, 181, 1)","--dark-05-color":"rgba(213, 213, 226, 1)","--pink-hover-color":"rgba(250, 50, 110, 1)","--pink-color":"rgba(255, 100, 146, 1)","--pink-bright-color":"rgba(250, 50, 110, 1)","--pink-02-color":"rgba(255, 131, 168, 1)","--pink-03-color":"rgba(255, 162, 190, 1)","--pink-04-color":"rgba(255, 193, 211, 1)","--pink-bg-color":"rgba(255, 100, 146, 1)","--purple-hover-color":"rgba(107, 76, 246, 1)","--purple-color":"rgba(122, 119, 255, 1)","--purple-02-color":"rgba(149, 146, 255, 1)","--purple-03-color":"rgba(175, 173, 255, 1)","--purple-04-color":"rgba(202, 201, 255, 1)","--light-color":"rgba(243, 243, 251, 1)","--light-02-color":"rgba(249, 249, 253, 1)","--white-color":"rgb(255, 255, 255)","--pink-back-color":"rgba(255, 242, 246, 1)","--yellow-back-color":"rgba(255, 247, 231, 1)","--outline-color":"rgba(107, 76, 246, .5)"},p={h1:"15x",h2:"6x",h3:"6x"},m={...["h1:","h2","h3","h4","h5","h6"].reduce((e,t)=>(e[`& ${t}:not([class])`]={fontWeight:`@${t}-font-weight`,fontFamily:`@${t}-font-family`,fontSize:`@${t}-font-size`,lineHeight:`@${t}-line-height`,letterSpacing:`@${t}-letter-spacing`,color:"#dark",marginTop:p[t]},e),{}),"& b:not([class])":{fontWeight:500,fontFamily:"@default-font-family",color:"#dark"},"& strong:not([class])":{fontWeight:500,fontFamily:"@default-font-family",color:"#dark"},"& p:not([class])":{fontWeight:"@p1-font-weight",fontFamily:"@p1-font-family",fontSize:"@p1-font-size",lineHeight:"@p1-line-height",letterSpacing:"@p1-letter-spacing",margin:"1.5x 0",padding:0},"& hr:not([class])":{display:"block",height:"var(--border-width)",backgroundColor:"var(--border-color)",border:"0",margin:"6x 0"},"& a:not([class])":{shadow:"0 @border-width 0 0 #main.20",border:"0",textDecoration:"underline",fontSize:"inherit",fontFamily:"@t1m-font-family",fontWeight:"@t1m-font-weight",letterSpacing:"@t1m-letter-spacing",lineHeight:"@t1m-line-height",outline:"0 #punk.3",color:"#purple",textDecorationLine:"underline",textUnderlineOffset:".35em",textDecorationColor:"#purple.20",transition:"theme"},"& a:not([class]):focus":{textDecorationLine:"none",outline:"1ow #punk.3"},"& a:not([class]):hover":{textDecorationLine:"none",color:"#purple-hover"},"& a:not([class]):active":{textDecorationLine:"none",color:"#purple-hover"},"& ul:not([class])":{margin:"1.5x 0 1.5x 2.5x",padding:"0"},"& li:not([class])":{margin:".5x 0",padding:"0"},"& img":{display:"block",width:"100%",objectPosition:"left",objectFit:"contain"}};var d=i(94724),h=i(21574),g=i.n(h),f=i(4126),u=i.n(f);g().bind(u());let _={...c,...m},x=e=>{let t=(0,a.useRouter)();return(0,o.useEffect)(()=>{e.variant?d.UO.page({variant:e.variant}):d.UO.page()},[e.variant]),(0,n.jsx)(r.HK,{children:(0,n.jsx)(r.lI,{value:[1440,980,640],children:(0,n.jsx)(r.fC,{className:e.className,styles:_,height:"min 100vh",font:s().style.fontFamily,router:t,children:(0,n.jsx)(r.kc,{width:["clamp(1254px, 100%, 1344px)","(100vw - (2 * @content-padding))"],columns:[12,,,2],gap:"3x",children:e.children})})})})};var y=x},38432:function(e,t,i){"use strict";i.r(t),i.d(t,{ContactPage:function(){return b},__N_SSG:function(){return k},default:function(){return F},getContactPageProps:function(){return w}});var n=i(11527),o=i(16085),a=i(16123),r=i(43845),l=i(14224);async function s(e){let t="true"===l.env.CONTENTFUL_PREVIEW,i=`{
+    landingPageSectionCollection (
+      preview: ${t}
+      where: {
+        slug_in: [${e.map(e=>'"'+e+'"').join(",")}]
+      }
+    ) {
+      items {
+        slug
+        pretitle
+        title
+        content
+        mediaType
+        appearance
+
+        mediaAnimation
+        mediaAnimationSvg
+        mediaAnimationMobile
+        mediaAnimationMobileSvg
+
+        mediaImagesCollection(
+          preview: ${t}
+          limit: 5
+        ) {
+          items {
+            imageUrl
+            alt
+          }
+        }
+
+        mediaCodeblocksCollection(
+          preview: ${t}
+          limit: 5
+        ) {
+          items {
+            language
+            code
+            tabName
+          }
+        }
+
+        mediaTestimonialsCollection(
+          preview: ${t}
+          limit: 5
+        ) {
+          items {
+            author(preview: ${t}) {
+              name
+              image
+              info
+            }
+            organizationLogo(preview: ${t}) {
+              logo
+              name
+            }
+            content
+          }
+        }
+
+        sectionsCollection(
+          preview: ${t}
+          limit: 5
+        ) {
+          items {
+            slug
+          }
+        }
+
+      }
+    }
+  }`,{data:n}=await (0,r.U)(i),o=n.landingPageSectionCollection?.items||[];for(let e of o){if(e.content){let t=await (0,a.q)(e.content);e.content=t}if(e.sectionsCollection){let t=await s(e.sectionsCollection.items.map(e=>e.slug));e.sectionsCollection.items=t}}return o.sort((t,i)=>e.indexOf(t.slug)-e.indexOf(i.slug))||[]}async function c(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},i="true"===l.env.CONTENTFUL_PREVIEW,{data:n}=await (0,r.U)(`{
+      landingPageCommonCollection(
+        preview: ${i}
+        where: { slug: "${e}" }
+        limit: 1
+      ) {
+        items {
+          slug
+          title
+          description
+          descriptionSeo
+          socialPreviewCover
+
+          hero(preview: ${i}) {
+            pretitle
+            title
+            description
+          }
+
+          ${t.companies?`
+          companiesCollection(preview: ${i}) {
+            items {
+              name
+              logo
+              logoDark
+              logoLight
+            }
+          }`:""}
+
+          ${t.sections?`
+          sectionsCollection(
+            preview: ${i}
+            limit: 8
+          ) {
+            items {
+              slug
+            }
+          }
+          `:""}
+
+          ${t.casestudies?`
+            caseStudiesCollection(
+              preview: ${i}
+              limit: 15
+            ) {
+              items {
+                slug
+                title
+                cover
+                company(preview: ${i}) {
+                  name
+                  logo
+                  logoDark
+                  logoLight
+                }
+
+                testimonial(preview: ${i}) {
+                  content
+                  link
+                  author(preview: ${i}) {
+                    name
+                    image
+                    info
+                  }
+                  organizationLogo(preview: ${i}) {
+                    logo
+                    logoDark
+                    logoLight
+                    name
+                  }
+                }
+              }
+            }
+          `:""}
+
+          ${t.usecases?`
+            useCasesCollection(
+              preview: ${i}
+              limit: 3
+            ) {
+              items {
+                slug
+                title
+                description
+              }
+            }
+          `:""}
+
+          testimonialsCollection(
+            preview: ${i}
+            limit: 4
+          ) {
+            items {
+              content
+              link
+              author(preview: ${i}) {
+                name
+                image
+                info
+              }
+              organizationLogo(preview: ${i}) {
+                name
+                logo
+                logoLight
+              }
+            }
+          }
+
+          ctaSection(preview: ${i}) {
+            title
+            type
+            description
+            testimonial(preview: ${i}) {
+              content
+              link
+              author(preview: ${i}) {
+                name
+                image
+                info
+              }
+              organizationLogo(preview: ${i}) {
+                logo
+                name
+              }
+            }
+          }
+        }
+      }
+    }`),o=n.landingPageCommonCollection.items[0]||null;if(o&&t.sections){let e=await s(o.sectionsCollection.items.map(e=>e.slug));o.sectionsCollection.items=e}return o}var p=i(82233),m=i(97729),d=i(3572),h=i(24404),g=i(44804),f=i(54801),u=i(1786),_=i.n(u),x=i(21574),y=i.n(x);let v=y().bind(_()),C=e=>{let{title:t,children:i}=e;return(0,n.jsxs)("div",{className:_().Feature,children:[(0,n.jsx)("h2",{className:_().Feature__title,children:t}),(0,n.jsx)("div",{className:_().Feature__description,children:i})]})};var k=!0;let b=e=>{let{page:t,showFeatures:i,variant:a}=e;return(0,n.jsxs)(p.Z,{variant:a,children:[(0,n.jsx)(m.Z,{title:t.title||"Talk to the Cube team",description:t.descriptionSeo||t.description,image:t.socialPreviewCover,themeColor:"#111122"}),(0,n.jsx)(h.T3.Nav,{appearance:"dark",transparent:!0}),(0,n.jsxs)(h.T3.Section,{as:"header",className:v("Hero",{"Hero--withFeatures":i}),appearance:"dark",paddingTop:"none",paddingBottom:"2xl",children:[(0,n.jsxs)(h.T3.Section.Content,{size:"m",className:_().Hero__Content,children:[(0,n.jsxs)("div",{className:_().Header,children:[(0,n.jsx)("h1",{className:_().Header__h1,children:t.hero?.title||"Request a demo"}),(0,n.jsx)("p",{className:_().Header__description,children:t.hero?.description||"Ready to upgrade your data pipeline? Cube’s fast-to-market semantic layer helps companies build consistent, secure, and performant data apps."}),i?(0,n.jsxs)("div",{className:_().CompaniesAlike,children:[(0,n.jsx)("h2",{className:_().CompaniesAlike__title,children:"just like these companies:"}),(0,n.jsx)("div",{className:_().CompaniesAlike__companies,children:t.companiesCollection.items.map(e=>(0,n.jsx)("img",{className:_().CompaniesAlike__company,src:e.logoDark.replace("dark","grayscale"),alt:e.name},e.name))})]}):(0,n.jsx)("ul",{className:_().Header__points,children:t.sectionsCollection.items.map(e=>(0,n.jsx)("li",{className:_().Header__point,children:e.title},e.slug))})]}),(0,n.jsx)("div",{className:_().ContactForm,children:(0,n.jsx)(f.u,{formId:"1f2d0647-e913-491e-b478-286c50cc0fcc",sfdcCampaignId:"7018c000001MotCAAS"})})]}),i?(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(h.T3.Section.Header,{className:_().Features,appearance:"dark",title:"The fastest way to develop data applications."}),(0,n.jsx)(h.T3.Section.Content,{size:"m",className:_().Features__Content,children:t.sectionsCollection.items.map(e=>(0,n.jsx)(C,{title:e.title,children:e.content&&("string"==typeof e.content?e.content:(0,n.jsx)(o.R,{...e.content}))},e.slug))})]}):t?.companiesCollection&&(0,n.jsx)(h.T3.Section.Content,{size:"m",children:(0,n.jsx)(g.CompaniesTicker,{className:_().Companies,companies:t.companiesCollection.items})})]}),(0,n.jsx)(d.$,{})]})};async function w(e){let t=await c(e,{companies:!0,sections:!0});return{page:t}}var F=b},92909:function(e,t,i){"use strict";i.d(t,{Dx:function(){return m.Dx},HK:function(){return m.HK},II:function(){return m.II},S2:function(){return h},T:function(){return m.T},VY:function(){return m.VY},Vq:function(){return m.Vq},ZG:function(){return m.ZG},Zb:function(){return m.Zb},Zw:function(){return m.Zw},aU:function(){return m.aU},fC:function(){return m.fC},gN:function(){return g},gO:function(){return m.gO},hg:function(){return m.hg},k4:function(){return m.k4},kC:function(){return m.kC},kc:function(){return m.kc},l0:function(){return m.l0},lI:function(){return m.lI},mR:function(){return m.mR},mX:function(){return m.mX},nv:function(){return m.nv},rU:function(){return _},rj:function(){return d},xv:function(){return m.xv},zx:function(){return u}});var n=i(24907),o=i(53153),a=i(16068),r=i(51100),l=i(8394),s=i(25336),c=i(32120),p=i(35584),m=i(93161);let d=(0,n.m)(o.r,{styles:{gap:"@grid-gap"}});(0,n.m)(a.V,{styles:{preset:"h5m",padding:"3px 12px",border:!1,fill:{"":"#light",'[data-type="yellow"]':"rgba(242, 189, 0, .1)",'[data-type="red"]':"#pink.1"},color:{"":"#dark-02",'[data-type="yellow"]':"rgba(225, 135, 0, 1)",'[data-type="red"]':"#pink-hover"}}});let h=(0,n.m)(r.S,{wrapperStyles:{width:"auto"},inputStyles:{height:"auto",padding:{"":"1.375x 2.5x",'[data-size="large"]':"1.875x 2.5x"},filter:{"":!1,"[disabled]":"contrast(0.88)"},opacity:{"":1,"[disabled]":.4},preset:{"":"t2",'[data-size="large"]':"t1"},border:{"":"#border",invalid:"#pink","focused & invalid":"#clear"},color:{"":"#dark-03",invalid:"#pink"},fill:"#white",outline:{"":"0 #outline",focused:"1ow #outline"},Button:{radius:"round",fill:{"":"#light","hovered | focused | pressed":"#purple",disabled:"#light"},color:{"":"#dark-03","hovered | focused | pressed":"#white"},padding:"0 1x",transition:"fill, color"},Placeholder:{color:"#dark-03.40",transition:"color"},Value:{color:"#dark-02",transition:"color"},"--outline-color":{"":"rgba(var(--purple-color-rgb), .3)",invalid:"rgba(var(--pink-color-rgb), .3)"},"--outline-width":"calc(1rem / 4)"}}),g=(0,n.m)(l.g,{labelStyles:{preset:"t2",color:"#dark-03",fontWeight:"normal"}});(0,n.m)(s.o,{inputStyles:{padding:{"":"1.375x 2.5x",'[data-size="large"]':"1.875x 2.5x"},preset:{"":"t2",'[data-size="large"]':"t1"}},wrapperStyles:{height:"auto",radius:"1r",filter:{"":!1,"[disabled]":"contrast(0.88)"},opacity:{"":1,"[disabled]":.4},border:{"":"#border",invalid:"#pink","focused & invalid":"#clear"},color:{"":"#dark-02",invalid:"#pink"},fill:"#white",outline:{"":"0 #outline",focused:"1ow #outline"},"--outline-color":{"":"rgba(var(--purple-color-rgb), .3)",invalid:"rgba(var(--pink-color-rgb), .3)"},"--outline-width":"calc(1rem / 4)"}});let f={height:"auto",padding:{"":"1.25x 1.5x",'[data-size="large"]':"1.75x 2.5x",'[data-size="hero"]':"2x 5x",'[data-type="link"]':"0"},shadow:!1,textDecorationLine:{"":!1,'[data-type="link"]':"underline",'[data-type="link"] & (pressed | hovered | disabled)':!1},textUnderlineOffset:".35em",textDecorationColor:"#main.20",filter:{"":!1,"[disabled]":"contrast(0.88)"},opacity:{"":1,"[disabled]":.4},preset:{"":"t2m",'[data-size="large"]':"t1m",'[data-size="hero"]':"h4m"},border:{"":"#main.6","pressed ^ hovered":"#main",'[data-type="primary"]':!1,'[data-type="link"] | [data-type="neutral"]':!1,'[data-size="hero"] & [data-type="primary"]':!1,'[data-size="hero"] & [data-type="outline"]':"#main.6"},color:{"":"#main",'[data-type="neutral"]':"#dark.60","pressed ^ hovered":"#hover",'[data-type="primary"] | ([data-type="primary"] & pressed)':"#white",'[data-type="link"] & [data-theme="pink"]':"#pink-bright"},fill:{"":"#clear",hovered:"#hover.10",'[data-type="primary"] | ([data-type="primary"] & hovered & pressed)':"#main",'[data-type="primary"] & hovered':"#hover",'[data-type="link"] | [data-type="neutral"]':"#clear"},outline:{"":"0 #outline",focused:"1ow #outline"},"--main-color":{"":"var(--pink-color)",'[data-theme="purple"]':"var(--purple-color)"},"--main-color-rgb":{"":"var(--pink-color-rgb)",'[data-theme="purple"]':"var(--purple-color-rgb)"},"--hover-color":{"":"var(--pink-hover-color)",'[data-theme="purple"]':"var(--purple-hover-color)"},"--hover-color-rgb":{"":"var(--pink-hover-color-rgb)",'[data-theme="purple"]':"var(--purple-hover-color-rgb)"},"--outline-color":{"":"rgba(var(--pink-color-rgb), .3)",'[data-theme="purple"]':"rgba(var(--purple-color-rgb), .3)"}},u=(0,n.m)(c.zx,{styles:f}),_=(0,n.m)(p.r,{styles:f})},17108:function(e){e.exports={SectionHero__companiesList:"CompaniesTicker_SectionHero__companiesList__aInHB","SectionHero__companiesList--animated":"CompaniesTicker_SectionHero__companiesList--animated__SlqwK",SectionHero__companiesSlide:"CompaniesTicker_SectionHero__companiesSlide__Scup9","SectionHero__companiesSlide--current":"CompaniesTicker_SectionHero__companiesSlide--current__Kzl1q","companies-slide-current":"CompaniesTicker_companies-slide-current__Su_k7","SectionHero__companiesSlide--next":"CompaniesTicker_SectionHero__companiesSlide--next__iAzvO","companies-slide-next":"CompaniesTicker_companies-slide-next__XsrLo",SectionHero__company:"CompaniesTicker_SectionHero__company__JHm0L"}},4126:function(e){e.exports={Hideable:"App_Hideable__o__J_","Hideable--hidden":"App_Hideable--hidden__aU4ok"}},1786:function(e){e.exports={Hero:"Contact_Hero__5P0wp","Hero--withFeatures":"Contact_Hero--withFeatures__HOIOM",Hero__Content:"Contact_Hero__Content__2GJsx",glow:"Contact_glow__VBJ9h",Header:"Contact_Header__iRb1S",Header__h1:"Contact_Header__h1__SOdWd",Header__description:"Contact_Header__description__nhowY",Header__points:"Contact_Header__points__JMxQU",Header__point:"Contact_Header__point__CrI2m",ContactForm:"Contact_ContactForm__h8ixf",ContactForm__success:"Contact_ContactForm__success__VTORa",ContactForm__textarea:"Contact_ContactForm__textarea___c5Tp",ContactForm__submit:"Contact_ContactForm__submit__QU1oX",Companies:"Contact_Companies__tyYHS",CompaniesAlike:"Contact_CompaniesAlike__I_REF",CompaniesAlike__title:"Contact_CompaniesAlike__title__AEorm",CompaniesAlike__companies:"Contact_CompaniesAlike__companies__MpZIM",CompaniesAlike__company:"Contact_CompaniesAlike__company__iJ_Rs",Features:"Contact_Features__hJPAg",Features__Content:"Contact_Features__Content__38S9R",Feature:"Contact_Feature__jJVkp",Feature__title:"Contact_Feature__title__LUZwU",Feature__description:"Contact_Feature__description__YlSmb"}}}]);

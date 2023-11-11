@@ -13,6 +13,7 @@ import SementaticLayer from './components/SementaticLayer'
 import { useRef, useState } from 'react'
 import SementaticLayerBottom from './components/SementaticLayerBottom'
 import SemanticCards from './components/SemanticCards'
+import Logo from './components/Logo'
 const secondSectionTopData = {
   counting: "16,439",
   countingMembers: "8,890",
@@ -235,6 +236,8 @@ export default function Home() {
       </section>
       <div style={{ marginTop: '4%' }}></div>
       <SementaticLayer {...secondSectionTopData} />
+      <Logo/>
+
       <SecondSection onPressReadMore={(type) => scrollToHandler(type)} animationCards={Colors.animationCards} />
       <SementaticLayerBottom {...secondSectionBottomData} />
       <div ref={scrolltoDiv}>
