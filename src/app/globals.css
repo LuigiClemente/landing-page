@@ -1037,10 +1037,11 @@ textarea.w-select {
 }
 
 @media screen and (max-width: 479px) {
-  .Product_ProductPages__Section--animated__q_VW3.Product_ProductPages__Section--inView__V2KYi{
-    display: none!important;
+  .Product_ProductPages__Section--animated__q_VW3.Product_ProductPages__Section--inView__V2KYi {
+    display: none !important;
   }
 }
+
 @media screen and (max-width: 479px) {
   .w-container {
     max-width: none;
@@ -28913,4 +28914,14 @@ ul {
   font-family: __JetBrainsMono_24422c, __JetBrainsMono_Fallback_24422c;
   font-weight: 400;
   font-style: normal
+}
+
+.handlebar_wrapper {
+  position: relative !important;
+}
+
+.handlebar_image {
+  position: absolute !important;
+  width: 29px!important;
+  height: 29px!important;
 }

@@ -230,13 +230,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="handlebar_wrapper" style={{ left: "98.5156%" }}><img
-          src="./Superlist_files/6272dd170459e2734bd53502_handlebar.svg" loading="lazy"
-          data-w-id="e78d6cef-cf09-92b7-6295-8e19ae342272" alt="" className="handlebar_image" /></div>
+        <div className="handlebar_wrapper" style={{ left: "98.5156%" }}>
+          <img
+          width={40}
+            src="https://assets-global.website-files.com/625593a881b8ebd169835ca5/6272dd170459e2734bd53502_handlebar.svg" alt="" className="handlebar_image" /></div>
       </section>
       <div style={{ marginTop: '4%' }}></div>
       <SementaticLayer {...secondSectionTopData} />
-      <Logo/>
+      <Logo />
 
       <SecondSection onPressReadMore={(type) => scrollToHandler(type)} animationCards={Colors.animationCards} />
       <SementaticLayerBottom {...secondSectionBottomData} />
