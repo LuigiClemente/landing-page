@@ -1033,12 +1033,12 @@ textarea.w-select {
     width: 100%;
   }
 }
-
+/* 
 @media screen and (max-width: 479px) {
   .Product_ProductPages__Section--animated__q_VW3.Product_ProductPages__Section--inView__V2KYi {
     display: none !important;
   }
-}
+} */
 
 @media screen and (max-width: 479px) {
   .w-container {

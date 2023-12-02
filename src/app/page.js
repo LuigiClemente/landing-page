@@ -10,7 +10,7 @@ import { DetailPageCaching } from './components/DetailPageCaching'
 import { DetailAccessControl } from './components/DetailAccessControl'
 import { DetailPageApi } from './components/DetailPageApi'
 import SementaticLayer from './components/SementaticLayer'
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import SementaticLayerBottom from './components/SementaticLayerBottom'
 import SemanticCards from './components/SemanticCards'
 import Logo from './components/Logo'
@@ -70,6 +70,7 @@ export default function Home() {
   const [dataModeling, setDataModeling] = useState(true)
   const [dataCaching, setDataCaching] = useState(false)
   const [dataAccess, setDataAccess] = useState(false)
+  const [width, setWidth] = useState(1920);
   const [dataApi, setDataApi] = useState(false)
   const scrolltoDiv = useRef(null)
   const scrollToHandler = async (type) => {
@@ -102,6 +103,18 @@ export default function Home() {
     }, 1000);
 
   }
+
+
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     setWidth(prevWidth => prevWidth + 10);
+  //   }, 500);
+
+  //   return () => {
+  //     clearInterval(intervalId);
+  //   };
+  // }, []);
+  // console.log(width,'width');
   return (
     <main style={{ background: Colors.bodyColor }} className={`bg-[${Colors.bodyColor}]`}>
       <section id="hero-section" data-w-id="e2240eed-9ecb-9f4e-f566-b74c4e1cb7ac" className="hero-section">
@@ -110,7 +123,7 @@ export default function Home() {
           <div className="hero-title-flex-wrapper">
             <HeroTitleFirst />
           </div>
-          <div style={{ height: '60vh', width: '1920px' }} className="hero-collections_wrapper">
+          <div style={{ height: '60vh', width: `${width}px` }} className="hero-collections_wrapper">
             <div className="hero-cards_collection-list-wrapper w-dyn-list"
               style={{
                 transform: "translate3d(-45.684%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
@@ -232,7 +245,7 @@ export default function Home() {
         </div>
         <div className="handlebar_wrapper" style={{ left: "58.5156%" }}>
           <img
-          width={40}
+            width={40}
             src="https://assets-global.website-files.com/625593a881b8ebd169835ca5/6272dd170459e2734bd53502_handlebar.svg" alt="" className="handlebar_image" /></div>
       </section>
       <div style={{ marginTop: '4%' }}></div>
@@ -306,7 +319,7 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
         <div className="container-footer-title">
           <p className="heading-medium g-text-align-center g-margin-b-medium">
             <span className="g-text-color-white">Apply</span>
-            < span className="text-black">to&nbsp;join&nbsp;our private beta</span>
+            < span className="text-black">to join our private beta</span>
           </p>
           <p className="text-size-medium g-text-align-center g-font-weight-semibold text-black">Available soon on all major devices.</p>
         </div>

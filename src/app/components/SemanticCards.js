@@ -7,7 +7,7 @@ function SemanticCards({
     dataAccess = false,
     sectionHandler,
     dataApi = false,
-    heading = "Check out the rest of Cube's four-part semantic&nbsp;layer",
+    heading = "Check out the rest of Cube's four-part semantic layer",
     cards = [
         {
 

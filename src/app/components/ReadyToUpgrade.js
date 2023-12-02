@@ -5,7 +5,7 @@ function ReadyToUpgrade({
     your data stack?`,
     logo = "https://cube.dev/logo_cube_cloud.svg",
     description = `Fully
-    managed hosting of your Cube&nbsp;apps`,
+    managed hosting of your Cube &nbsp ;apps`,
 }) {
     return (
         <div>
