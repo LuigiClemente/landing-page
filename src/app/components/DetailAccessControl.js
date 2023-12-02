@@ -168,7 +168,7 @@ on the same page with data modeling upstream of every app.`,
                                             <section className="ProductFeatureList_ProductFeatureList__zCe8z">
                                                 {Sections.map((item =>
                                                     !item.canvas ? (
-                                                        <article className="ProductFeatureCard_ProductFeatureCard__B7f19 ProductFeatureCard_ProductFeatureCard--inView__4EHXT">
+                                                        <article key={item?.title} className="ProductFeatureCard_ProductFeatureCard__B7f19 ProductFeatureCard_ProductFeatureCard--inView__4EHXT">
                                                             <div className="ProductFeatureCard_ProductFeatureCard__media__WE9Tc">
                                                                 <div className="Animation_Animation__IWnaO ProductFeatureCard_ProductFeatureCard__animation__OIH1L">
                                                                     <div className="Animation_Animation__player__I38FQ">
@@ -191,7 +191,7 @@ on the same page with data modeling upstream of every app.`,
                                                             </div>
                                                         </article>
                                                     ) : (
-                                                        <article className="ProductFeatureCard_ProductFeatureCard__B7f19 ProductFeatureCard_ProductFeatureCard--inView__4EHXT">
+                                                        <article key={item?.title} className="ProductFeatureCard_ProductFeatureCard__B7f19 ProductFeatureCard_ProductFeatureCard--inView__4EHXT">
                                                             <div className="ProductFeatureCard_ProductFeatureCard__media__WE9Tc">
                                                                 <img className="ProductFeatureCard_ProductFeatureCard__image__hYlZT"
                                                                     src={item?.img} alt="" />

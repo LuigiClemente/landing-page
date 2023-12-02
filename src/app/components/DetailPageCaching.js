@@ -146,8 +146,8 @@ on the same page with data modeling upstream of every app.`,
                                                 {Sections.map((item =>
                                                     !item.canvas && item.orchestrateApi === false ?
                                                         (
-                                                            <article className="ProductFeatureCard_ProductFeatureCard__B7f19 ProductFeatureCard_ProductFeatureCard--inView__4EHXT">
-                                                                <div className="ProductFeatureCard_ProductFeatureCard__media__WE9Tc">
+                                                            <article key={item?.title} className="ProductFeatureCard_ProductFeatureCard__B7f19 ProductFeatureCard_ProductFeatureCard--inView__4EHXT">
+                                                                <div key={item?.title} className="ProductFeatureCard_ProductFeatureCard__media__WE9Tc">
                                                                     <div className="Animation_Animation__IWnaO ProductFeatureCard_ProductFeatureCard__animation__OIH1L">
                                                                         <div className="Animation_Animation__player__I38FQ">
                                                                             <img
@@ -198,6 +198,7 @@ on the same page with data modeling upstream of every app.`,
                                             item.orchestrateApi === true ?
                                                 (
                                                     <div
+                                                        key={item?.title}
                                                         style={{
                                                             '--section_padding_top': '0px',
                                                             '--section_padding_bottom': 'var(--space-4xl)',

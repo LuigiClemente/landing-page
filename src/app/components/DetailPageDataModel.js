@@ -141,8 +141,8 @@ export const DetailPageDataModel = (
                                             <section className="ProductFeatureList_ProductFeatureList__zCe8z">
                                                 {Sections.map((item =>
                                                     !item.canvas ? (
-                                                        <article className="ProductFeatureCard_ProductFeatureCard__B7f19 ProductFeatureCard_ProductFeatureCard--inView__4EHXT">
-                                                            <div className="ProductFeatureCard_ProductFeatureCard__media__WE9Tc">
+                                                        <article key={item?.title} className="ProductFeatureCard_ProductFeatureCard__B7f19 ProductFeatureCard_ProductFeatureCard--inView__4EHXT">
+                                                            <div key={item?.title} className="ProductFeatureCard_ProductFeatureCard__media__WE9Tc">
                                                                 <div className="Animation_Animation__IWnaO ProductFeatureCard_ProductFeatureCard__animation__OIH1L">
                                                                     <div className="Animation_Animation__player__I38FQ">
                                                                         <img
@@ -164,8 +164,8 @@ export const DetailPageDataModel = (
                                                             </div>
                                                         </article>
                                                     ) : (
-                                                        <article className="ProductFeatureCard_ProductFeatureCard__B7f19 ProductFeatureCard_ProductFeatureCard--inView__4EHXT">
-                                                            <div className="ProductFeatureCard_ProductFeatureCard__media__WE9Tc">
+                                                        <article key={item?.title} className="ProductFeatureCard_ProductFeatureCard__B7f19 ProductFeatureCard_ProductFeatureCard--inView__4EHXT">
+                                                            <div key={item?.title} className="ProductFeatureCard_ProductFeatureCard__media__WE9Tc">
                                                                 <img className="ProductFeatureCard_ProductFeatureCard__image__hYlZT" src={item?.img} alt="" />
                                                             </div>
                                                             <div className="ProductFeatureCard_ProductFeatureCard__texts__vB9ht">
@@ -196,8 +196,8 @@ export const DetailPageDataModel = (
                                                 {SectionCodeBlock.map((item) => (
                                                     !item?.right ?
                                                         (
-                                                            <section id="how-does-data-modeling-with-cube-work-code-block-1" className="FeatureSection_FeatureSection__rKBQy">
-                                                                <div className="FeatureSection_FeatureSection__content__QNW1v">
+                                                            <section key={item?.title} id="how-does-data-modeling-with-cube-work-code-block-1" className="FeatureSection_FeatureSection__rKBQy">
+                                                                <div key={item?.title} className="FeatureSection_FeatureSection__content__QNW1v">
                                                                     <div className="FeatureSection_FeatureSection__text__jloSe">
                                                                         <p>
                                                                             {item.descriptionOne}
@@ -224,8 +224,8 @@ export const DetailPageDataModel = (
                                                                 </div>
                                                             </section>
                                                         ) : (
-                                                            <section id="how-does-data-modeling-with-cube-work-code-block-2" className="FeatureSection_FeatureSection__rKBQy">
-                                                                <div className="FeatureSection_FeatureSection__content__QNW1v">
+                                                            <section key={item?.descriptionOne} id="how-does-data-modeling-with-cube-work-code-block-2" className="FeatureSection_FeatureSection__rKBQy">
+                                                                <div  key={item?.descriptionOne} className="FeatureSection_FeatureSection__content__QNW1v">
                                                                     <div className="FeatureSection_FeatureSection__text__jloSe">
                                                                         <p>
                                                                             {item.descriptionOne}

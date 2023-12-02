@@ -16,6 +16,7 @@ function Logo({ logos = [
             <div className="CompaniesTicker_SectionHero__companiesSlide__Scup9 flex-wrap gap-8">
                 {logos.map((item =>
                     <img
+                        key={item}
                         className="CompaniesTicker_SectionHero__company__JHm0L"
                         src={item}
                         alt="Walmart logo"

@@ -156,8 +156,9 @@ on the same page with data modeling upstream of every app.`,
 
                                                 {sections.map((item =>
                                                     !item.canvas ?
-                                                        <article className="ProductFeatureCard_ProductFeatureCard__B7f19 ProductFeatureCard_ProductFeatureCard--inView__4EHXT">
+                                                        <article key={item?.title} className="ProductFeatureCard_ProductFeatureCard__B7f19 ProductFeatureCard_ProductFeatureCard--inView__4EHXT">
                                                             <div
+                                                                key={item?.title}
                                                                 className="ProductFeatureCard_ProductFeatureCard__media__WE9Tc"
                                                                 bis_skin_checked={1}
                                                             >
@@ -182,8 +183,8 @@ on the same page with data modeling upstream of every app.`,
                                                             </div>
                                                         </article>
                                                         :
-                                                        <article className="ProductFeatureCard_ProductFeatureCard__B7f19 ProductFeatureCard_ProductFeatureCard--inView__4EHXT">
-                                                            <div className="ProductFeatureCard_ProductFeatureCard__media__WE9Tc">
+                                                        <article key={item?.title} className="ProductFeatureCard_ProductFeatureCard__B7f19 ProductFeatureCard_ProductFeatureCard--inView__4EHXT">
+                                                            <div key={item?.title} className="ProductFeatureCard_ProductFeatureCard__media__WE9Tc">
                                                                 <div className="Animation_Animation__IWnaO ProductFeatureCard_ProductFeatureCard__animation__OIH1L">
                                                                     <div className="Animation_Animation__player__I38FQ">
                                                                         <img
@@ -342,9 +343,9 @@ on the same page with data modeling upstream of every app.`,
                             Graph visualizes <a href="https://cube.dev/docs/schema/reference/cube">cubes</a>
                             and <a href="https://cube.dev/docs/schema/reference/joins">joins</a>
                             between them as an entity-relationship diagram (ERD). It
-                            allows to have a bird's-eye view of the data model and
-                            visually detects connected parts, i.e., groups of cubes
-                            that don't have any relationships with other groups.
+                            allows to have a bird &apos s-eye view of the data model and
+                            visually detects connected parts &apos  i.e. &apos groups of cubes
+                            that don &apos t have any relationships with other groups.
                         </p>
                     </div>
                     <div className="Page_SectionContent__Ztn5n SectionContent--align-none Page_SectionContent--size-l__4MlQw Section--gap-none"><img className="Product_ProductPages__subSectionBigMedia_img__eZIhg" src="./Data Modeling_files/data-graph-light.png" alt="" /></div>
