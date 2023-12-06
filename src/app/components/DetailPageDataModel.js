@@ -268,7 +268,7 @@ export const DetailPageDataModel = (
                 </div>
             </div >
 
-            <ReadyToUpgrade />
+      
             {props.children}
             <section id="shadow-host-companion">
                 <template shadowrootmode="open" />

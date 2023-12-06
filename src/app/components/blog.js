@@ -267,7 +267,7 @@ objects: cubes and views.`,
                 </div>
             </div >
 
-            <ReadyToUpgrade />
+          
             <SemanticCards />
             <section id="shadow-host-companion">
                 <template shadowrootmode="open" />

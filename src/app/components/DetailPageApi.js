@@ -351,7 +351,7 @@ on the same page with data modeling upstream of every app.`,
                     <div className="Page_SectionContent__Ztn5n SectionContent--align-none Page_SectionContent--size-l__4MlQw Section--gap-none"><img className="Product_ProductPages__subSectionBigMedia_img__eZIhg" src="./Data Modeling_files/data-graph-light.png" alt="" /></div>
                 </div>
             </div >
-            <ReadyToUpgrade />
+           
             {props.children}
             <section id="shadow-host-companion">
                 <template shadowrootmode="open" />
