@@ -10,10 +10,11 @@ import { DetailPageCaching } from './components/DetailPageCaching'
 import { DetailAccessControl } from './components/DetailAccessControl'
 import { DetailPageApi } from './components/DetailPageApi'
 import SementaticLayer from './components/SementaticLayer'
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import SementaticLayerBottom from './components/SementaticLayerBottom'
 import SemanticCards from './components/SemanticCards'
 import Logo from './components/Logo'
+import { logging } from '../../next.config'
 const secondSectionTopData = {
   counting: "16,439",
   countingMembers: "8,890",
@@ -70,6 +71,7 @@ export default function Home() {
   const [dataModeling, setDataModeling] = useState(true)
   const [dataCaching, setDataCaching] = useState(false)
   const [dataAccess, setDataAccess] = useState(false)
+  const [width, setWidth] = useState(1920);
   const [dataApi, setDataApi] = useState(false)
   const scrolltoDiv = useRef(null)
   const scrollToHandler = async (type) => {
@@ -102,6 +104,18 @@ export default function Home() {
     }, 1000);
 
   }
+
+
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     setWidth(prevWidth => prevWidth + 10);
+  //   }, 500);
+
+  //   return () => {
+  //     clearInterval(intervalId);
+  //   };
+  // }, []);
+  // console.log(width,'width');
   return (
     <main style={{ background: Colors.bodyColor }} className={`bg-[${Colors.bodyColor}]`}>
       <section id="hero-section" data-w-id="e2240eed-9ecb-9f4e-f566-b74c4e1cb7ac" className="hero-section">
@@ -110,50 +124,99 @@ export default function Home() {
           <div className="hero-title-flex-wrapper">
             <HeroTitleFirst />
           </div>
-          <div style={{ height: '60vh', width: '1920px' }} className="hero-collections_wrapper">
-            <div className="hero-cards_collection-list-wrapper w-dyn-list"
+          <div style={{ height: '60vh', width: `1920px` }} className="hero-collections_wrapper">
+            <div
+              className="hero-cards_collection-list-wrapper w-dyn-list"
               style={{
                 transform: "translate3d(-45.684%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
                 transformStyle: "preserve-3d",
                 willChange: "transform"
               }}>
-              <div role="list" className="hero-cards_collection-list w-dyn-items">
-                <VideoListImg imgUrl={"./Superlist_files/625d7ae44b92b031ab860a57_card-light-01.jpg"}
-                />
+              <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+                <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+                  <VideoListImg imgUrl={"./Superlist_files/625d7ae44b92b031ab860a57_card-light-01.jpg"} />
+                  <VideoListVideo
+                    imgUrl={"./Superlist_files/625d7c129fdba028c21d6f2c_card-light-02.jpg"}
+                    videoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396239/website/mini%20cards/v2/Renovation_Card_peu5jt.webm"}
+                    secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396239/website/mini%20cards/v2/Renovation_Card_peu5jt.mp4"} />
+                  <VideoListVideo
+                    imgUrl={"./Superlist_files/625d7c2881d0426fcd2ca457_card-light-03.jpg"}
+                    videoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396244/website/mini%20cards/v2/Kitchen_Stool_Idea_Card_vn7abp.webm"}
+                    secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396244/website/mini%20cards/v2/Kitchen_Stool_Idea_Card_vn7abp.mp4"} />
+                  <VideoListImg
+                    imgUrl={"./Superlist_files/625d7c969fdba0afeb1de9d4_card-light-04.jpg"} />
+                  <VideoListImg
+                    imgUrl={"./Superlist_files/6467d07201faed7c16c4db7c_k1-min.png"} />
+                  <VideoListImg
+                    imgUrl={"./Superlist_files/625d7cefaffa760c78c2d940_card-light-06.jpg"} />
+                  <VideoListVideo
+                    imgUrl={"./Superlist_files/625d7d01dfd17f3847ef7d07_card-light-07.jpg"}
+                    videoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396252/website/mini%20cards/v2/Chat_Scrolling_Card_e7g4et.webm"}
+                    secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396252/website/mini%20cards/v2/Chat_Scrolling_Card_e7g4et.mp4"} />
+                  <VideoListImg
+                    imgUrl={"./Superlist_files/625d7d0cf3930d2d2eb0e8cf_card-light-08.jpg"} />
+                  <VideoListImg
+                    imgUrl={"./Superlist_files/625d7d20f3930d1c54b102b3_card-light-09.jpg"} />
+                  <VideoListImg
+                    imgUrl={"./Superlist_files/625d7d376e467ebde3eb163a_card-light-10.jpg"} />
+                </ul>
+                <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+                  <VideoListImg imgUrl={"./Superlist_files/625d7ae44b92b031ab860a57_card-light-01.jpg"} />
+                  <VideoListVideo
+                    imgUrl={"./Superlist_files/625d7c129fdba028c21d6f2c_card-light-02.jpg"}
+                    videoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396239/website/mini%20cards/v2/Renovation_Card_peu5jt.webm"}
+                    secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396239/website/mini%20cards/v2/Renovation_Card_peu5jt.mp4"} />
+                  <VideoListVideo
+                    imgUrl={"./Superlist_files/625d7c2881d0426fcd2ca457_card-light-03.jpg"}
+                    videoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396244/website/mini%20cards/v2/Kitchen_Stool_Idea_Card_vn7abp.webm"}
+                    secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396244/website/mini%20cards/v2/Kitchen_Stool_Idea_Card_vn7abp.mp4"} />
+                  <VideoListImg
+                    imgUrl={"./Superlist_files/625d7c969fdba0afeb1de9d4_card-light-04.jpg"} />
+                  <VideoListImg
+                    imgUrl={"./Superlist_files/6467d07201faed7c16c4db7c_k1-min.png"} />
+                  <VideoListImg
+                    imgUrl={"./Superlist_files/625d7cefaffa760c78c2d940_card-light-06.jpg"} />
+                  <VideoListVideo
+                    imgUrl={"./Superlist_files/625d7d01dfd17f3847ef7d07_card-light-07.jpg"}
+                    videoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396252/website/mini%20cards/v2/Chat_Scrolling_Card_e7g4et.webm"}
+                    secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396252/website/mini%20cards/v2/Chat_Scrolling_Card_e7g4et.mp4"} />
+                  <VideoListImg
+                    imgUrl={"./Superlist_files/625d7d0cf3930d2d2eb0e8cf_card-light-08.jpg"} />
+                  <VideoListImg
+                    imgUrl={"./Superlist_files/625d7d20f3930d1c54b102b3_card-light-09.jpg"} />
+                  <VideoListImg
+                    imgUrl={"./Superlist_files/625d7d376e467ebde3eb163a_card-light-10.jpg"} />
+                </ul>
+              </div>
+              {/* <div
+                x-ref="logos"
+                role="list" className="hero-cards_collection-list w-dyn-items animate-infinite-scroll">
+                <VideoListImg imgUrl={"./Superlist_files/625d7ae44b92b031ab860a57_card-light-01.jpg"} />
                 <VideoListVideo
                   imgUrl={"./Superlist_files/625d7c129fdba028c21d6f2c_card-light-02.jpg"}
                   videoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396239/website/mini%20cards/v2/Renovation_Card_peu5jt.webm"}
-                  secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396239/website/mini%20cards/v2/Renovation_Card_peu5jt.mp4"}
-                />
+                  secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396239/website/mini%20cards/v2/Renovation_Card_peu5jt.mp4"} />
                 <VideoListVideo
                   imgUrl={"./Superlist_files/625d7c2881d0426fcd2ca457_card-light-03.jpg"}
                   videoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396244/website/mini%20cards/v2/Kitchen_Stool_Idea_Card_vn7abp.webm"}
-                  secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396244/website/mini%20cards/v2/Kitchen_Stool_Idea_Card_vn7abp.mp4"}
-                />
+                  secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396244/website/mini%20cards/v2/Kitchen_Stool_Idea_Card_vn7abp.mp4"} />
                 <VideoListImg
-                  imgUrl={"./Superlist_files/625d7c969fdba0afeb1de9d4_card-light-04.jpg"}
-                />
+                  imgUrl={"./Superlist_files/625d7c969fdba0afeb1de9d4_card-light-04.jpg"} />
                 <VideoListImg
-                  imgUrl={"./Superlist_files/6467d07201faed7c16c4db7c_k1-min.png"}
-                />
+                  imgUrl={"./Superlist_files/6467d07201faed7c16c4db7c_k1-min.png"} />
                 <VideoListImg
-                  imgUrl={"./Superlist_files/625d7cefaffa760c78c2d940_card-light-06.jpg"}
-                />
+                  imgUrl={"./Superlist_files/625d7cefaffa760c78c2d940_card-light-06.jpg"} />
                 <VideoListVideo
                   imgUrl={"./Superlist_files/625d7d01dfd17f3847ef7d07_card-light-07.jpg"}
                   videoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396252/website/mini%20cards/v2/Chat_Scrolling_Card_e7g4et.webm"}
-                  secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396252/website/mini%20cards/v2/Chat_Scrolling_Card_e7g4et.mp4"}
-                />
+                  secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396252/website/mini%20cards/v2/Chat_Scrolling_Card_e7g4et.mp4"} />
                 <VideoListImg
-                  imgUrl={"./Superlist_files/625d7d0cf3930d2d2eb0e8cf_card-light-08.jpg"}
-                />
+                  imgUrl={"./Superlist_files/625d7d0cf3930d2d2eb0e8cf_card-light-08.jpg"} />
                 <VideoListImg
-                  imgUrl={"./Superlist_files/625d7d20f3930d1c54b102b3_card-light-09.jpg"}
-                />
+                  imgUrl={"./Superlist_files/625d7d20f3930d1c54b102b3_card-light-09.jpg"} />
                 <VideoListImg
-                  imgUrl={"./Superlist_files/625d7d376e467ebde3eb163a_card-light-10.jpg"}
-                />
-              </div>
+                  imgUrl={"./Superlist_files/625d7d376e467ebde3eb163a_card-light-10.jpg"} />
+              </div> */}
             </div>
           </div>
         </div>
@@ -164,21 +227,115 @@ export default function Home() {
             <div className="hero-title-flex-wrapper">
               <HeroTitle headingColor={Colors.heroSectionSecondColor} />
             </div>
-            <div style={{ height: "60vh", width: "1920px", display: 'flex', alignItems: 'flex-start' }} className="hero-collections_wrapper">
-              <div className="hero-cards_collection-list-wrapper w-dyn-list"
+
+            <div style={{ height: '60vh', width: `1920px` }} className="hero-collections_wrapper">
+              <div className="hero-cards_collection-list-wrapper w-dyn-list overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
                 style={{
-                  transform: 'translate3d(-45.684%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
-                  transformStyle: 'preserve-3d',
-                  willChange: 'transform'
+                  transform: "translate3d(-45.684%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                  transformStyle: "preserve-3d",
+                  willChange: "transform"
                 }}>
-              </div>
-              <div className="hsero-cards_collection-list-wrapper w-dyn-list"
-                style={{
-                  transform: 'translate3d(-45.684%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
-                  transformStyle: 'preserve-3d',
-                  willChange: 'transform'
-                }}>
-                <div role="list" className="hero-cards_collection-list w-dyn-items">
+                <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+                  <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+                    <VideoListVideo
+                      imgUrl="./Superlist_files/625d7ae7005e9ed86c07f9d2_card-dark-01.jpg"
+                      videoUrl="https://res.cloudinary.com/superlist/video/upload/q_auto:good/v1653395915/website/mini%20cards/v2/Navigation_Bar_slpbkv.webm"
+                      secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/q_auto:good/v1653395915/website/mini%20cards/v2/Navigation_Bar_slpbkv.mp4"}
+                    />
+                    <VideoListVideo
+                      imgUrl="./Superlist_files/625d7c0ff20543fe572134c7_card-dark-02.jpg"
+                      videoUrl="https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395869/website/mini%20cards/v2/Animation_rel1jl.webm"
+                      secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395869/website/mini%20cards/v2/Animation_rel1jl.mp4"}
+                    />
+                    <VideoListVideo
+                      imgUrl="./Superlist_files/625d7c2c02a09d62bd379394_card-dark-03.jpg"
+                      videoUrl="https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395866/website/mini%20cards/v2/Animation_fzjx2c.webm"
+                      secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395866/website/mini%20cards/v2/Animation_fzjx2c.mp4"}
+                    />
+                    <VideoListVideo
+                      imgUrl="./Superlist_files/625d7c8f81d042b7eb2cc943_card-dark-04.jpg"
+                      videoUrl="https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395739/website/mini%20cards/v2/Animation_sqmqdq.webm"
+                      secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395739/website/mini%20cards/v2/Animation_sqmqdq.mp4"}
+                    />
+                    <VideoListImg imgUrl="./Superlist_files/625d7ca581d04264002cd5b7_card-dark-05.jpg" />
+                    <VideoListVideo
+                      imgUrl="./Superlist_files/625d7cf36e467e8560eafb7e_card-dark-06.jpg"
+                      videoUrl="https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395864/website/mini%20cards/v2/Animation_o0vvtn.webm"
+                      secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395864/website/mini%20cards/v2/Animation_o0vvtn.mp4"}
+                    />
+                    <VideoListVideo
+                      imgUrl="./Superlist_files/6467fed7899246757f8a5af6_Rep-min.png"
+                      videoUrl="https://res.cloudinary.com/superlist/video/upload/v1684536003/website/mini%20cards/v2/Repeat_tkjecn.webm"
+                      secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/v1684536003/website/mini%20cards/v2/Repeat_tkjecn.mp4"}
+                    />
+                    <VideoListVideo
+                      imgUrl="./Superlist_files/625d7d0f5730251fd2cff4a7_card-dark-08.jpg"
+                      videoUrl="https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395875/website/mini%20cards/v2/Animation_nk2ydp.webm"
+                      secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395875/website/mini%20cards/v2/Animation_nk2ydp.mp4"}
+                    />
+                    <VideoListVideo
+                      imgUrl="./Superlist_files/625d7d24676ac8166cabc2c4_card-dark-09.jpg"
+                      videoUrl="https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395889/website/mini%20cards/v2/Pitch_Deck_Covers_dbeuve.webm"
+                      secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395889/website/mini%20cards/v2/Pitch_Deck_Covers_dbeuve.mp4"}
+                    />
+                    <VideoListVideo
+                      imgUrl="./Superlist_files/625d7d3a60c6445253d2078a_card-dark-10.jpg"
+                      videoUrl="https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395888/website/mini%20cards/v2/App_Launch_al7bjr.webm"
+                      secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395888/website/mini%20cards/v2/App_Launch_al7bjr.mp4"}
+                    />
+                    
+                  </ul>
+                  <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+                    <VideoListVideo
+                      imgUrl="./Superlist_files/625d7ae7005e9ed86c07f9d2_card-dark-01.jpg"
+                      videoUrl="https://res.cloudinary.com/superlist/video/upload/q_auto:good/v1653395915/website/mini%20cards/v2/Navigation_Bar_slpbkv.webm"
+                      secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/q_auto:good/v1653395915/website/mini%20cards/v2/Navigation_Bar_slpbkv.mp4"}
+                    />
+                    <VideoListVideo
+                      imgUrl="./Superlist_files/625d7c0ff20543fe572134c7_card-dark-02.jpg"
+                      videoUrl="https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395869/website/mini%20cards/v2/Animation_rel1jl.webm"
+                      secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395869/website/mini%20cards/v2/Animation_rel1jl.mp4"}
+                    />
+                    <VideoListVideo
+                      imgUrl="./Superlist_files/625d7c2c02a09d62bd379394_card-dark-03.jpg"
+                      videoUrl="https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395866/website/mini%20cards/v2/Animation_fzjx2c.webm"
+                      secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395866/website/mini%20cards/v2/Animation_fzjx2c.mp4"}
+                    />
+                    <VideoListVideo
+                      imgUrl="./Superlist_files/625d7c8f81d042b7eb2cc943_card-dark-04.jpg"
+                      videoUrl="https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395739/website/mini%20cards/v2/Animation_sqmqdq.webm"
+                      secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395739/website/mini%20cards/v2/Animation_sqmqdq.mp4"}
+                    />
+                    <VideoListImg imgUrl="./Superlist_files/625d7ca581d04264002cd5b7_card-dark-05.jpg" />
+                    <VideoListVideo
+                      imgUrl="./Superlist_files/625d7cf36e467e8560eafb7e_card-dark-06.jpg"
+                      videoUrl="https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395864/website/mini%20cards/v2/Animation_o0vvtn.webm"
+                      secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395864/website/mini%20cards/v2/Animation_o0vvtn.mp4"}
+                    />
+                    <VideoListVideo
+                      imgUrl="./Superlist_files/6467fed7899246757f8a5af6_Rep-min.png"
+                      videoUrl="https://res.cloudinary.com/superlist/video/upload/v1684536003/website/mini%20cards/v2/Repeat_tkjecn.webm"
+                      secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/v1684536003/website/mini%20cards/v2/Repeat_tkjecn.mp4"}
+                    />
+                    <VideoListVideo
+                      imgUrl="./Superlist_files/625d7d0f5730251fd2cff4a7_card-dark-08.jpg"
+                      videoUrl="https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395875/website/mini%20cards/v2/Animation_nk2ydp.webm"
+                      secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395875/website/mini%20cards/v2/Animation_nk2ydp.mp4"}
+                    />
+                    <VideoListVideo
+                      imgUrl="./Superlist_files/625d7d24676ac8166cabc2c4_card-dark-09.jpg"
+                      videoUrl="https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395889/website/mini%20cards/v2/Pitch_Deck_Covers_dbeuve.webm"
+                      secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395889/website/mini%20cards/v2/Pitch_Deck_Covers_dbeuve.mp4"}
+                    />
+                    <VideoListVideo
+                      imgUrl="./Superlist_files/625d7d3a60c6445253d2078a_card-dark-10.jpg"
+                      videoUrl="https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395888/website/mini%20cards/v2/App_Launch_al7bjr.webm"
+                      secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395888/website/mini%20cards/v2/App_Launch_al7bjr.mp4"}
+                    />
+                    
+                  </ul>
+                </div>
+                {/* <div role="list" className="hero-cards_collection-list w-dyn-items animate-infinite-scroll">
                   <VideoListVideo
                     imgUrl="./Superlist_files/625d7ae7005e9ed86c07f9d2_card-dark-01.jpg"
                     videoUrl="https://res.cloudinary.com/superlist/video/upload/q_auto:good/v1653395915/website/mini%20cards/v2/Navigation_Bar_slpbkv.webm"
@@ -225,14 +382,14 @@ export default function Home() {
                     videoUrl="https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395888/website/mini%20cards/v2/App_Launch_al7bjr.webm"
                     secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395888/website/mini%20cards/v2/App_Launch_al7bjr.mp4"}
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
         <div className="handlebar_wrapper" style={{ left: "58.5156%" }}>
           <img
-          width={40}
+            width={40}
             src="https://assets-global.website-files.com/625593a881b8ebd169835ca5/6272dd170459e2734bd53502_handlebar.svg" alt="" className="handlebar_image" /></div>
       </section>
       <div style={{ marginTop: '4%' }}></div>
@@ -306,7 +463,7 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
         <div className="container-footer-title">
           <p className="heading-medium g-text-align-center g-margin-b-medium">
             <span className="g-text-color-white">Apply</span>
-            < span className="text-black">to&nbsp;join&nbsp;our private beta</span>
+            < span className="text-black">to join our private beta</span>
           </p>
           <p className="text-size-medium g-text-align-center g-font-weight-semibold text-black">Available soon on all major devices.</p>
         </div>
