@@ -1,31 +1,15 @@
-import React from 'react'
+import React from "react";
 
-function Logo({ logos = [
-    "https://static.cube.dev/companies/ramsoft-grayscale.svg",
-    "https://static.cube.dev/companies/security_scorecard-grayscale.svg",
-    "https://static.cube.dev/companies/cloud_academy-grayscale.svg",
-    "https://static.cube.dev/companies/ibm-grayscale.svg",
-    "https://static.cube.dev/companies/intuit-grayscale.svg",
-
-    "https://static.cube.dev/companies/walmart-grayscale.svg",
-    "https://static.cube.dev/companies/ramsoft-grayscale.svg",
-
-] }) {
-    return (
-        <div className="CompaniesTicker_SectionHero__companiesList__aInHB mt-10 mb-10">
-            <div className="CompaniesTicker_SectionHero__companiesSlide__Scup9 flex-wrap gap-8">
-                {logos.map((item =>
-                    <img
-                        key={item}
-                        className="CompaniesTicker_SectionHero__company__JHm0L"
-                        src={item}
-                        alt="Walmart logo"
-                    />
-                ))}
-
-            </div>
-        </div>
-    )
+function Logo({ logos = ["/colleges/harvard.svg", "/colleges/kcl-.svg", "/colleges/mgh.svg", "/colleges/stanford.svg"] }) {
+  return (
+    <div className="CompaniesTicker_SectionHero__companiesList__aInHB h-20 mt-10 mb-10">
+      <div className="CompaniesTicker_SectionHero__companiesSlide__Scup9 flex-wrap">
+        {logos.map((item) => (
+          <img key={item} className="CompaniesTicker_SectionHero__company__JHm0L w-fit h-16 invert opacity-60" src={item} alt="Walmart logo" />
+        ))}
+      </div>
+    </div>
+  );
 }
 
-export default Logo
+export default Logo;
