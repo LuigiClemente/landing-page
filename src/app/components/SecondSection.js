@@ -15,21 +15,21 @@ const SecondSection = ({
       borderColor: "#D5EDFE",
       title: "Access Control",
       description: "Define and manage metrics upstream to consolidate your workflow, centralize definitions, and create a single source of truth.",
-      bottomIcon: "https://cube.dev/images/cube-scheme/badge-access-control.svg",
+      bottomIcon: "/card-icons/nutrition.svg",
     },
     {
       backgroundColor: "#FFFF00",
       borderColor: "#FFF9F0",
       title: "Caching",
       description: "Define and manage metrics upstream to consolidate your workflow, centralize definitions, and create a single source of truth.",
-      bottomIcon: "https://cube.dev/images/cube-scheme/badge-caching.svg",
+      bottomIcon: "/card-icons/fat.svg",
     },
     {
       backgroundColor: "#FF0000",
       borderColor: "#FFC1D3",
       title: "Apis",
       description: "Define and manage metrics upstream to consolidate your workflow, centralize definitions, and create a single source of truth.",
-      bottomIcon: "https://cube.dev/images/cube-scheme/badge-api.svg",
+      bottomIcon: "/card-icons/sugar.svg",
     },
   ],
   onPressReadMore,
@@ -66,7 +66,7 @@ const SecondSection = ({
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 424" fill="none" class="CubeSchema_CubeSchema__svg--desktop__fDVWm">
             <g
               class="input-lines-7_svg__scheme-dash-animated"
-              stroke="#9592FF"
+              stroke="green"
               stroke-dasharray="0.24 5.6"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -120,7 +120,7 @@ const SecondSection = ({
           </svg>
         </div>
         <div className="CubeSchema_CubeSchema__cube__aVGJu">
-          <svg viewBox="0 0 480 424" fill="none" className="CubeSchema_CubeSchema__cube__svg__VAd6W">
+          <svg viewBox="0 0 480 424" fill="none" classname="CubeSchema_CubeSchema__cube__svg__VAd6W">
             <defs>
               <linearGradient id="gradient-1" x1="56" x2="436.8" y1="238.415" y2="238.415" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1, 0, 0, 1, 4.586182, 2.389873)">
                 <stop stop-color="green" />
@@ -128,43 +128,14 @@ const SecondSection = ({
               </linearGradient>
             </defs>
             <g transform="matrix(0.045888, 0, 0, 0.046198, 199.458374, 9.486949)">
-              <svg viewBox="0 0 396 64" data-background-color="#ffffff" preserveAspectRatio="xMidYMid meet" height="323" width="2000" xmlns="http://www.w3.org/2000/svg">
-                <g id="tight-bounds" transform="matrix(1,0,0,1,0.2400000000000091,0.0728938837259534)">
-                  <svg viewBox="0 0 395.52 63.85421223254808" height="63.85421223254808" width="395.52">
-                    <g>
-                      <svg viewBox="0 0 395.52 63.85421223254808" height="63.85421223254808" width="395.52">
-                        <g>
-                          <svg viewBox="0 0 395.52 63.85421223254808" height="63.85421223254808" width="395.52">
-                            <g id="textblocktransform">
-                              <svg viewBox="0 0 395.52 63.85421223254808" height="63.85421223254808" width="395.52" id="textblock">
-                                <g>
-                                  <svg viewBox="0 0 395.52 63.85421223254808" height="63.85421223254808" width="395.52">
-                                    <g transform="matrix(1,0,0,1,0,0)">
-                                      <svg width="395.52" viewBox="3.25 -36.95 231.33 37.35" height="63.85421223254808" data-palette-color="#152232">
-                                        <path
-                                          d="M24.2-6.15L24.2 0 3.25 0 3.25-33.7 24-33.7 24-27.55 11-27.55 11-19.9 22.6-19.9 22.6-13.8 11-13.8 11-6.15 24.2-6.15ZM53.2-25.35L53.2 0 45.9 0 45.9-4.05Q43.9 0.2 38.2 0.2L38.2 0.2Q34.3 0.2 32.12-1.98 29.95-4.15 29.95-8.4L29.95-8.4 29.95-25.35 37.25-25.35 37.25-10.05Q37.25-5.6 41.15-5.6L41.15-5.6Q45.9-5.6 45.9-11.95L45.9-11.95 45.9-25.35 53.2-25.35ZM96.4-16.25L96.4 0 89.09 0 89.09-15.05Q89.09-17.2 88.25-18.45 87.4-19.7 85.8-19.7L85.8-19.7Q84.1-19.7 82.77-18.32 81.45-16.95 81.45-13.4L81.45-13.4 81.45 0 74.15 0 74.15-15.05Q74.15-17.2 73.3-18.45 72.45-19.7 70.85-19.7L70.85-19.7Q69.15-19.7 67.82-18.32 66.5-16.95 66.5-13.4L66.5-13.4 66.5 0 59.2 0 59.2-25.35 66.5-25.35 66.5-21.4Q68.6-25.6 73.65-25.6L73.65-25.6Q79-25.6 80.75-20.8L80.75-20.8Q81.6-23.05 83.6-24.33 85.6-25.6 88.3-25.6L88.3-25.6Q92.05-25.6 94.22-23.23 96.4-20.85 96.4-16.25L96.4-16.25ZM111.44-5L111.44-5Q112.99-5 113.84-5.95 114.69-6.9 114.69-8.55L114.69-8.55 114.69-10.4 112.34-10.4Q110.49-10.4 109.49-9.6 108.49-8.8 108.49-7.55L108.49-7.55Q108.49-5 111.44-5ZM115.04 0L115.04-3.1Q113.44 0.15 108.74 0.15L108.74 0.15Q105.04 0.15 102.97-1.95 100.89-4.05 100.89-7.2L100.89-7.2Q100.89-10.85 103.57-12.88 106.24-14.9 111.49-14.9L111.49-14.9 114.69-14.9 114.69-16.65Q114.69-19.85 110.44-19.85L110.44-19.85Q106.34-19.85 102.84-17.55L102.84-17.55 102.84-24.1Q105.84-25.8 111.49-25.8L111.49-25.8Q116.89-25.8 119.54-23.48 122.19-21.15 122.19-16.25L122.19-16.25 122.19 0 115.04 0ZM138.19-7.6L133.64 0 125.74 0 134.79-12.7 126.29-25.35 134.39-25.35 138.49-17.8 143.04-25.35 151.04-25.35 141.94-12.65 150.39 0 142.44 0 138.19-7.6ZM161.79-25.35L161.79 0 154.49 0 154.49-25.35 161.79-25.35ZM161.14-35.7Q162.39-34.45 162.39-32.7 162.39-30.95 161.14-29.7 159.89-28.45 158.14-28.45 156.39-28.45 155.14-29.7 153.89-30.95 153.89-32.7 153.89-34.45 155.14-35.7 156.39-36.95 158.14-36.95 159.89-36.95 161.14-35.7ZM205.24-16.25L205.24 0 197.94 0 197.94-15.05Q197.94-17.2 197.09-18.45 196.24-19.7 194.64-19.7L194.64-19.7Q192.94-19.7 191.61-18.32 190.29-16.95 190.29-13.4L190.29-13.4 190.29 0 182.99 0 182.99-15.05Q182.99-17.2 182.14-18.45 181.29-19.7 179.69-19.7L179.69-19.7Q177.99-19.7 176.66-18.32 175.34-16.95 175.34-13.4L175.34-13.4 175.34 0 168.04 0 168.04-25.35 175.34-25.35 175.34-21.4Q177.44-25.6 182.49-25.6L182.49-25.6Q187.84-25.6 189.59-20.8L189.59-20.8Q190.44-23.05 192.44-24.33 194.44-25.6 197.14-25.6L197.14-25.6Q200.89-25.6 203.06-23.23 205.24-20.85 205.24-16.25L205.24-16.25ZM234.58-12.8L234.58-12.8Q234.58-7.05 231.31-3.33 228.03 0.4 222.18 0.4L222.18 0.4Q216.23 0.4 212.98-3.18 209.73-6.75 209.73-12.35L209.73-12.35Q209.73-18.2 213.13-21.98 216.53-25.75 222.18-25.75L222.18-25.75Q228.08-25.75 231.33-22.1 234.58-18.45 234.58-12.8ZM218.53-17.95Q217.33-15.9 217.33-12.65 217.33-9.4 218.56-7.33 219.78-5.25 222.23-5.25L222.23-5.25Q224.63-5.25 225.81-7.28 226.98-9.3 226.98-12.55L226.98-12.55Q226.98-20 222.13-20L222.13-20Q219.73-20 218.53-17.95Z"
-                                          opacity="1"
-                                          transform="matrix(1,0,0,1,0,0)"
-                                          fill="#ffffff"
-                                          class="wordmark-text-0"
-                                          data-fill-palette-color="primary"
-                                          id="text-0"
-                                        />
-                                      </svg>
-                                    </g>
-                                  </svg>
-                                </g>
-                              </svg>
-                            </g>
-                          </svg>
-                        </g>
-                        <g />
-                      </svg>
-                    </g>
-                  </svg>
-                  <rect width="395.52" height="63.85421223254808" stroke="none" visibility="hidden" fill="none" />
-                </g>
-              </svg>
+              <path
+                d="M 86.398 276.943 L 86.398 338.05 L -121.763 338.05 L -121.763 3.206 L 84.409 3.206 L 84.409 64.312 L -44.759 64.312 L -44.759 140.324 L 70.499 140.324 L 70.499 200.933 L -44.759 200.933 L -44.759 276.943 L 86.398 276.943 Z M 374.541 86.172 L 374.541 338.05 L 302.009 338.05 L 302.009 297.81 C 288.762 325.962 263.259 340.037 225.501 340.037 C 199.667 340.037 179.531 332.817 165.09 318.377 C 150.717 304.003 143.529 282.739 143.529 254.588 L 143.529 86.172 L 216.062 86.172 L 216.062 238.193 C 216.062 267.67 228.979 282.409 254.812 282.409 C 286.277 282.409 302.009 261.378 302.009 219.316 L 302.009 86.172 L 374.541 86.172 Z M 803.778 176.59 L 803.778 338.05 L 731.146 338.05 L 731.146 188.514 C 731.146 174.272 728.364 163.011 722.8 154.73 C 717.169 146.451 709.054 142.311 698.456 142.311 C 687.195 142.311 677.16 146.881 668.351 156.022 C 659.606 165.098 655.234 181.392 655.234 204.908 L 655.234 338.05 L 582.702 338.05 L 582.702 188.514 C 582.702 174.272 579.887 163.011 574.255 154.73 C 568.626 146.451 560.512 142.311 549.912 142.311 C 538.652 142.311 528.616 146.881 519.807 156.022 C 511.064 165.098 506.69 181.392 506.69 204.908 L 506.69 338.05 L 434.157 338.05 L 434.157 86.172 L 506.69 86.172 L 506.69 125.419 C 520.6 97.598 544.282 83.688 577.733 83.688 C 613.172 83.688 636.686 99.585 648.279 131.382 C 653.909 116.477 663.349 104.786 676.597 96.307 C 689.845 87.895 705.411 83.688 723.297 83.688 C 748.135 83.688 767.745 91.538 782.118 107.236 C 796.558 123.003 803.778 146.119 803.778 176.59 Z M 953.216 288.371 C 963.483 288.371 971.433 285.224 977.063 278.932 C 982.693 272.638 985.509 264.028 985.509 253.098 L 985.509 234.715 L 962.159 234.715 C 949.904 234.715 940.465 237.366 933.841 242.665 C 927.217 247.965 923.905 254.753 923.905 263.034 C 923.905 279.925 933.675 288.371 953.216 288.371 Z M 988.986 338.05 L 988.986 307.249 C 978.388 328.777 957.522 339.54 926.389 339.54 C 901.88 339.54 882.77 332.586 869.058 318.676 C 855.279 304.764 848.39 287.377 848.39 266.511 C 848.39 242.333 857.268 223.521 875.019 210.074 C 892.706 196.694 918.938 190.003 953.712 190.003 L 985.509 190.003 L 985.509 172.616 C 985.509 151.419 971.433 140.821 943.281 140.821 C 916.122 140.821 890.951 148.439 867.767 163.673 L 867.767 98.593 C 887.638 87.332 916.288 81.702 953.712 81.702 C 989.483 81.702 1016.143 89.385 1033.699 104.752 C 1051.251 120.187 1060.028 144.133 1060.028 176.59 L 1060.028 338.05 L 988.986 338.05 Z M 1219.005 262.536 L 1173.797 338.05 L 1095.301 338.05 L 1185.222 211.863 L 1100.767 86.172 L 1181.248 86.172 L 1221.987 161.189 L 1267.194 86.172 L 1346.683 86.172 L 1256.265 212.36 L 1340.225 338.05 L 1261.233 338.05 L 1219.005 262.536 Z M 1453.496 86.172 L 1453.496 338.05 L 1380.962 338.05 L 1380.962 86.172 L 1453.496 86.172 Z M 1447.037 -16.666 C 1455.318 -8.385 1459.457 1.551 1459.457 13.142 C 1459.457 24.735 1455.318 34.67 1447.037 42.951 C 1438.759 51.231 1428.821 55.371 1417.228 55.371 C 1405.637 55.371 1395.702 51.231 1387.42 42.951 C 1379.141 34.67 1375 24.735 1375 13.142 C 1375 1.551 1379.141 -8.385 1387.42 -16.666 C 1395.702 -24.945 1405.637 -29.085 1417.228 -29.085 C 1428.821 -29.085 1438.759 -24.945 1447.037 -16.666 Z M 1885.216 176.59 L 1885.216 338.05 L 1812.684 338.05 L 1812.684 188.514 C 1812.684 174.272 1809.868 163.011 1804.238 154.73 C 1798.606 146.451 1790.493 142.311 1779.893 142.311 C 1768.633 142.311 1758.597 146.881 1749.788 156.022 C 1741.044 165.098 1736.673 181.392 1736.673 204.908 L 1736.673 338.05 L 1664.14 338.05 L 1664.14 188.514 C 1664.14 174.272 1661.324 163.011 1655.694 154.73 C 1650.063 146.451 1641.949 142.311 1631.349 142.311 C 1620.089 142.311 1610.053 146.881 1601.244 156.022 C 1592.501 165.098 1588.13 181.392 1588.13 204.908 L 1588.13 338.05 L 1515.596 338.05 L 1515.596 86.172 L 1588.13 86.172 L 1588.13 125.419 C 1602.039 97.598 1625.72 83.688 1659.17 83.688 C 1694.61 83.688 1718.125 99.585 1729.717 131.382 C 1735.347 116.477 1744.787 104.786 1758.034 96.307 C 1771.284 87.895 1786.848 83.688 1804.734 83.688 C 1829.574 83.688 1849.182 91.538 1863.555 107.236 C 1877.995 123.003 1885.216 146.119 1885.216 176.59 Z M 2176.739 210.87 C 2176.739 248.957 2165.909 280.323 2144.247 304.965 C 2122.521 329.67 2092.282 342.025 2053.532 342.025 C 2014.119 342.025 1983.649 330.169 1962.121 306.454 C 1940.593 282.806 1929.828 252.435 1929.828 215.34 C 1929.828 176.59 1941.09 144.696 1963.611 119.656 C 1986.134 94.684 2016.105 82.199 2053.532 82.199 C 2092.613 82.199 2122.92 94.288 2144.447 118.464 C 2165.975 142.642 2176.739 173.444 2176.739 210.87 Z M 2017.267 159.7 C 2009.316 173.278 2005.342 190.832 2005.342 212.36 C 2005.342 233.888 2009.416 251.508 2017.565 265.219 C 2025.645 278.996 2037.801 285.887 2054.029 285.887 C 2069.926 285.887 2081.784 279.162 2089.601 265.716 C 2097.349 252.335 2101.224 234.881 2101.224 213.355 C 2101.224 164.003 2085.162 139.33 2053.035 139.33 C 2037.137 139.33 2025.214 146.119 2017.267 159.7 Z"
+                opacity="1"
+                class="wordmark-text-0"
+                data-fill-palette-color="primary"
+                id="text-0"
+                fill="rgb(255, 255, 255)"
+              />
               <text
                 style={{ fill: "white", fontFamily: "Inter, sans-serif", fontSize: "23.7904px", lineHeight: "38.0647px", whiteSpace: "pre" }}
                 transform="matrix(12.824088, 0, 0, 12.738034, -336.01297, 8738.233398)"
@@ -196,7 +167,7 @@ const SecondSection = ({
               <p className="CubeSchema_CubeSchema__card_content__K1bdM">{animationCards[0].description}</p>
             </div>
             <div className="CubeSchema_CubeSchema__card_footer__YU7RW">
-              <img className="w-6 sm:w-[3.75vw] xl:w-12" src={"/card-icons/microbes.svg"} width="32" height="32" alt="Data Modeling badge" />
+              <img className="CubeSchema_CubeSchema__card_badge__1a_FX w-6 sm:w-[3.75vw] xl:w-12" src={"/card-icons/microbes.svg"} width="32" height="32" alt="Data Modeling badge" />
               <div style={{ cursor: "pointer" }} onClick={() => onPressReadMore("Modeling")} className="CubeSchema_CubeSchema__card_readMore__ovs9v">
                 Read more
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
@@ -222,7 +193,7 @@ const SecondSection = ({
               <p className="CubeSchema_CubeSchema__card_content__K1bdM">{animationCards[1].description}</p>
             </div>
             <div className="CubeSchema_CubeSchema__card_footer__YU7RW flex justify-end">
-              <img className="w-8 sm:w-[4.5vw] xl:w-[3.75rem]" src={"/card-icons/nutrition.svg"} width="32" height="32" alt="Access Control badge" />
+              <img className="CubeSchema_CubeSchema__card_badge__1a_FX w-8 sm:w-[4.5vw] xl:w-[3.75rem]" src={"/card-icons/nutrition.svg"} width="32" height="32" alt="Access Control badge" />
               <div style={{ cursor: "pointer" }} onClick={() => onPressReadMore("Access")} className="CubeSchema_CubeSchema__card_readMore__ovs9v">
                 Read more
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
@@ -248,7 +219,7 @@ const SecondSection = ({
               <p className="CubeSchema_CubeSchema__card_content__K1bdM">{animationCards[2].description}</p>
             </div>
             <div className="CubeSchema_CubeSchema__card_footer__YU7RW">
-              <img className="w-6 sm:w-[3.6vw] xl:w-12" src={"/card-icons/fat.svg"} width="32" height="32" alt="Caching badge" />
+              <img className="CubeSchema_CubeSchema__card_badge__1a_FX w-6 sm:w-[3.6vw] xl:w-12" src={"/card-icons/fat.svg"} width="32" height="32" alt="Caching badge" />
               <div style={{ cursor: "pointer" }} onClick={() => onPressReadMore("Caching")} className="CubeSchema_CubeSchema__card_readMore__ovs9v">
                 Read more
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
@@ -274,7 +245,7 @@ const SecondSection = ({
               <p className="CubeSchema_CubeSchema__card_content__K1bdM">{animationCards[3].description}</p>
             </div>
             <div className="CubeSchema_CubeSchema__card_footer__YU7RW">
-              <img className="w-6 sm:w-[4vw] xl:w-[3.2rem] xl:mt-11" src={"/card-icons/sugar.svg"} width="32" height="32" alt="APIs badge" />
+              <img className="CubeSchema_CubeSchema__card_badge__1a_FX w-6 sm:w-[4vw] xl:w-[3.2rem] xl:mt-11" src={"/card-icons/sugar.svg"} width="32" height="32" alt="APIs badge" />
               <div style={{ cursor: "pointer" }} onClick={() => onPressReadMore("Apis")} className="CubeSchema_CubeSchema__card_readMore__ovs9v">
                 Read more
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
@@ -288,7 +259,7 @@ const SecondSection = ({
           <svg viewBox="0 0 152 424" fill="none" className="CubeSchema_CubeSchema__svg--desktop__fDVWm" xmlns="http://www.w3.org/2000/svg">
             <g
               className="output-lines-3-curved_svg__scheme-dash-animated"
-              stroke="#FF83A8"
+              stroke="red"
               stroke-dasharray="0.24 5.6"
               stroke-linecap="round"
               stroke-linejoin="round"
