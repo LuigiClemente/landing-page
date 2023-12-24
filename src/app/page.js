@@ -41,28 +41,28 @@ const Colors = {
       borderColor: "#D3D2FF",
       title: "Blog",
       description: "Define and manage metrics upstream to consolidate your workflow, centralize definitions, and create a single source of truth.",
-      bottomIcon: "https://cube.dev/images/cube-scheme/badge-data-modeling.svg",
+      bottomIcon: "/card-icons/microbes.svg",
     },
     {
       backgroundColor: "#4395EB",
       borderColor: "#D5EDFE",
       title: "Access Control",
       description: "Define and manage metrics upstream to consolidate your workflow, centralize definitions, and create a single source of truth.",
-      bottomIcon: "https://cube.dev/images/cube-scheme/badge-access-control.svg",
+      bottomIcon: "/card-icons/nutrition.svg",
     },
     {
       backgroundColor: "#EB9845",
       borderColor: "#FFF9F0",
       title: "Caching",
       description: "Define and manage metrics upstream to consolidate your workflow, centralize definitions, and create a single source of truth.",
-      bottomIcon: "https://cube.dev/images/cube-scheme/badge-caching.svg",
+      bottomIcon: "/card-icons/fat.svg",
     },
     {
       backgroundColor: "#D83E74",
       borderColor: "#FFC1D3",
       title: "Apis",
       description: "Define and manage metrics upstream to consolidate your workflow, centralize definitions, and create a single source of truth.",
-      bottomIcon: "https://cube.dev/images/cube-scheme/badge-api.svg",
+      bottomIcon: "/card-icons/sugar.svg",
     },
   ],
 };
@@ -107,13 +107,13 @@ export default function Home() {
   useEffect(() => {
     console.log(dataModeling, dataCaching, dataAccess, dataApi);
     if (dataModeling) {
-      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #4395EB)";
+      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #008000, #111122 95%)";
     } else if (dataCaching) {
-      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #BD336D)";
+      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #FFA500, #111122 95%)";
     } else if (dataAccess) {
-      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #FFB74A)";
+      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #e9ce5d, #111122 95%)";
     } else if (dataApi) {
-      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #7170F4)";
+      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #F84F39, #111122 95%)";
     }
   }, [dataModeling, dataCaching, dataAccess, dataApi]);
 
@@ -131,7 +131,14 @@ export default function Home() {
     <main style={{ background: Colors.bodyColor }} className={`bg-[${Colors.bodyColor}]`}>
       <section id="hero-section" data-w-id="e2240eed-9ecb-9f4e-f566-b74c4e1cb7ac" className="hero-section">
         <div className="hero-wrapper cc-orange" style={{ backgroundColor: Colors.heroSectionSecondColor }}>
-          <div className="nav-spacer g-pointer-events-none"></div>
+          <div className="nav-spacer g-pointer-events-none flex items-center justify-end pr-10">
+            <a
+              href="https://cubecloud.dev/auth/signup"
+              className="w-32 h-10 text-sm md:w-36 md:h-11 md:text-sm lg:w-40 lg:h-12 lg:text-base Button_Button__VQ4Ej Button--appearance-light getStartedButton rounded-lg"
+            >
+              Get Started
+            </a>
+          </div>
           <div className="hero-title-flex-wrapper">
             <HeroTitleFirst />
           </div>
@@ -228,11 +235,17 @@ export default function Home() {
         </div>
         <div data-w-id="073af362-6ea5-34e3-4471-301acdd3fa11" style={{ width: "58.5156%", height: "120vh" }} className="hero-clipping-wrapper">
           <div className="hero-wrapper">
-            <div className="nav-spacer g-pointer-events-none"></div>
+            <div className="nav-spacer g-pointer-events-none flex items-center justify-end pr-10">
+              <a
+                href="https://cubecloud.dev/auth/signup"
+                className="w-32 h-10 text-sm md:w-36 md:h-11 md:text-sm lg:w-40 lg:h-12 lg:text-base Button_Button__VQ4Ej Button--appearance-light getStartedButton rounded-lg"
+              >
+                Get Started
+              </a>
+            </div>
             <div className="hero-title-flex-wrapper">
               <HeroTitle headingColor={Colors.heroSectionSecondColor} />
             </div>
-
             <div style={{ height: "60vh", width: `1920px` }} className="hero-collections_wrapper">
               <div
                 className="hero-cards_collection-list-wrapper w-dyn-list overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
