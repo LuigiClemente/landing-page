@@ -24,12 +24,12 @@ const secondSectionTopData = {
   description: "Connect data silos, drive consistent metrics, and power your AI and analytics with context.",
 };
 const secondSectionBottomData = {
-  title: "What is a Semantic Layer?",
-  description: `A semantic layer is a middleware between your data source and your data
-    application. Cube is an API-first, four-part semantic layer that enables
-    data engineers and developers to make their data consistent, secure,
-    performant, and accessible across every application.`,
-  smallDescription: "More about Cube’s Semantic Layer",
+  title: "O que é a Camada Semântica?",
+  description: `A Camada Semântica da Eumaximo é uma inovação em saúde, analisando seu microbioma, 
+  níveis de gordura e glicose, e dados nutricionais. Com tecnologia avançada e algoritmos inteligentes, 
+  ela oferece orientações personalizadas para compreender e melhorar sua saúde, auxiliando em decisões 
+  informadas para o bem-estar máximo.`,
+  smallDescription: "Quero saber mais sobre a Camada Semântica da Eumaximo.",
 };
 const Colors = {
   bodyColor: "#111122",
@@ -73,6 +73,7 @@ export default function Home() {
   const [width, setWidth] = useState(1920);
   const [dataApi, setDataApi] = useState(false);
   const scrolltoDiv = useRef(null);
+  const gradientBackground = useRef(null);
   const scrollToHandler = async (type) => {
     scrolltoDiv.current?.scrollIntoView({ behavior: "smooth" });
     setTimeout(async () => {
@@ -102,6 +103,19 @@ export default function Home() {
       }
     }, 1000);
   };
+
+  useEffect(() => {
+    console.log(dataModeling, dataCaching, dataAccess, dataApi);
+    if (dataModeling) {
+      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #4395EB)";
+    } else if (dataCaching) {
+      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #BD336D)";
+    } else if (dataAccess) {
+      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #FFB74A)";
+    } else if (dataApi) {
+      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #7170F4)";
+    }
+  }, [dataModeling, dataCaching, dataAccess, dataApi]);
 
   // useEffect(() => {
   //   const intervalId = setInterval(() => {
@@ -387,28 +401,30 @@ export default function Home() {
       <Logo />
 
       <SecondSection onPressReadMore={(type) => scrollToHandler(type)} animationCards={Colors.animationCards} />
-      <SementaticLayerBottom {...secondSectionBottomData} />
-      <div ref={scrolltoDiv}>
-        {dataModeling && (
-          <DetailPageDataModel>
-            <SemanticCards sectionRef={scrolltoDiv} sectionHandler={(type) => scrollToHandler(type)} dataModel={dataModeling} dataCaching={dataCaching} dataAccess={dataAccess} dataApi={dataApi} />
-          </DetailPageDataModel>
-        )}
-        {dataCaching && (
-          <DetailPageCaching>
-            <SemanticCards sectionRef={scrolltoDiv} sectionHandler={(type) => scrollToHandler(type)} dataModel={dataModeling} dataCaching={dataCaching} dataAccess={dataAccess} dataApi={dataApi} />
-          </DetailPageCaching>
-        )}
-        {dataAccess && (
-          <DetailAccessControl>
-            <SemanticCards sectionRef={scrolltoDiv} sectionHandler={(type) => scrollToHandler(type)} dataModel={dataModeling} dataCaching={dataCaching} dataAccess={dataAccess} dataApi={dataApi} />
-          </DetailAccessControl>
-        )}
-        {dataApi && (
-          <DetailPageApi>
-            <SemanticCards sectionRef={scrolltoDiv} sectionHandler={(type) => scrollToHandler(type)} dataModel={dataModeling} dataCaching={dataCaching} dataAccess={dataAccess} dataApi={dataApi} />
-          </DetailPageApi>
-        )}
+      <div className="" ref={gradientBackground}>
+        <SementaticLayerBottom {...secondSectionBottomData} />
+        <div ref={scrolltoDiv}>
+          {dataModeling && (
+            <DetailPageDataModel>
+              <SemanticCards sectionRef={scrolltoDiv} sectionHandler={(type) => scrollToHandler(type)} dataModel={dataModeling} dataCaching={dataCaching} dataAccess={dataAccess} dataApi={dataApi} />
+            </DetailPageDataModel>
+          )}
+          {dataCaching && (
+            <DetailPageCaching>
+              <SemanticCards sectionRef={scrolltoDiv} sectionHandler={(type) => scrollToHandler(type)} dataModel={dataModeling} dataCaching={dataCaching} dataAccess={dataAccess} dataApi={dataApi} />
+            </DetailPageCaching>
+          )}
+          {dataAccess && (
+            <DetailAccessControl>
+              <SemanticCards sectionRef={scrolltoDiv} sectionHandler={(type) => scrollToHandler(type)} dataModel={dataModeling} dataCaching={dataCaching} dataAccess={dataAccess} dataApi={dataApi} />
+            </DetailAccessControl>
+          )}
+          {dataApi && (
+            <DetailPageApi>
+              <SemanticCards sectionRef={scrolltoDiv} sectionHandler={(type) => scrollToHandler(type)} dataModel={dataModeling} dataCaching={dataCaching} dataAccess={dataAccess} dataApi={dataApi} />
+            </DetailPageApi>
+          )}
+        </div>
       </div>
       <div style={{ marginBottom: "4%" }}></div>
       <footer id="signup" data-w-id="8912e0d8-13fa-7635-fd54-54fc5e19c5a3" className="footer">
