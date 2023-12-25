@@ -68,7 +68,7 @@ on the same page with data modeling upstream of every app.`,
                           <a
                             target="__blank"
                             href="https://cube.dev/contact"
-                            className="Button_Button__VQ4Ej Button--appearance-light ProductHeader_ProductHeader__button__fvePN Button_Button--cherry__FCGeq Button_Button--size-m__DGRm_"
+                            className="Button_Button__VQ4Ej getStartedButton Button--appearance-light ProductHeader_ProductHeader__button__fvePN Button_Button--cherry__FCGeq Button_Button--size-m__DGRm_"
                             style={{
                               height: "40px",
                               padding: "0 16px",

@@ -2,3 +2,11 @@
   color: white;
   background: linear-gradient(90deg, #226592 5%, #5caee4, #215d85 97%);
 }
+
+.triangle_blackoutLines__SQ3KJ {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  bottom: 0px;
+  inset: 0;
+}

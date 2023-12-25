@@ -15,6 +15,7 @@ import SementaticLayerBottom from "./components/SementaticLayerBottom";
 import SemanticCards from "./components/SemanticCards";
 import Logo from "./components/Logo";
 import { logging } from "../../next.config";
+import FragmentsSvg from "./components/FragmentsSvg";
 const secondSectionTopData = {
   counting: "16,439",
   countingMembers: "8,890",
@@ -105,28 +106,17 @@ export default function Home() {
   };
 
   useEffect(() => {
-    console.log(dataModeling, dataCaching, dataAccess, dataApi);
     if (dataModeling) {
-      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #008000, #111122 95%)";
+      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #008000, white 95%)";
     } else if (dataCaching) {
-      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #FFA500, #111122 95%)";
+      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #e9ce5d, white 95%)";
     } else if (dataAccess) {
-      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #e9ce5d, #111122 95%)";
+      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #FFA500, white 95%)";
     } else if (dataApi) {
-      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #F84F39, #111122 95%)";
+      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #F84F39, white 95%)";
     }
   }, [dataModeling, dataCaching, dataAccess, dataApi]);
 
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     setWidth(prevWidth => prevWidth + 10);
-  //   }, 500);
-
-  //   return () => {
-  //     clearInterval(intervalId);
-  //   };
-  // }, []);
-  // console.log(width,'width');
   return (
     <main style={{ background: Colors.bodyColor }} className={`bg-[${Colors.bodyColor}]`}>
       <section id="hero-section" data-w-id="e2240eed-9ecb-9f4e-f566-b74c4e1cb7ac" className="hero-section">
@@ -201,35 +191,6 @@ export default function Home() {
                   <VideoListImg imgUrl={"./Superlist_files/625d7d376e467ebde3eb163a_card-light-10.jpg"} />
                 </ul>
               </div>
-              {/* <div
-                x-ref="logos"
-                role="list" className="hero-cards_collection-list w-dyn-items animate-infinite-scroll">
-                <VideoListImg imgUrl={"./Superlist_files/625d7ae44b92b031ab860a57_card-light-01.jpg"} />
-                <VideoListVideo
-                  imgUrl={"./Superlist_files/625d7c129fdba028c21d6f2c_card-light-02.jpg"}
-                  videoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396239/website/mini%20cards/v2/Renovation_Card_peu5jt.webm"}
-                  secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396239/website/mini%20cards/v2/Renovation_Card_peu5jt.mp4"} />
-                <VideoListVideo
-                  imgUrl={"./Superlist_files/625d7c2881d0426fcd2ca457_card-light-03.jpg"}
-                  videoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396244/website/mini%20cards/v2/Kitchen_Stool_Idea_Card_vn7abp.webm"}
-                  secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396244/website/mini%20cards/v2/Kitchen_Stool_Idea_Card_vn7abp.mp4"} />
-                <VideoListImg
-                  imgUrl={"./Superlist_files/625d7c969fdba0afeb1de9d4_card-light-04.jpg"} />
-                <VideoListImg
-                  imgUrl={"./Superlist_files/6467d07201faed7c16c4db7c_k1-min.png"} />
-                <VideoListImg
-                  imgUrl={"./Superlist_files/625d7cefaffa760c78c2d940_card-light-06.jpg"} />
-                <VideoListVideo
-                  imgUrl={"./Superlist_files/625d7d01dfd17f3847ef7d07_card-light-07.jpg"}
-                  videoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396252/website/mini%20cards/v2/Chat_Scrolling_Card_e7g4et.webm"}
-                  secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653396252/website/mini%20cards/v2/Chat_Scrolling_Card_e7g4et.mp4"} />
-                <VideoListImg
-                  imgUrl={"./Superlist_files/625d7d0cf3930d2d2eb0e8cf_card-light-08.jpg"} />
-                <VideoListImg
-                  imgUrl={"./Superlist_files/625d7d20f3930d1c54b102b3_card-light-09.jpg"} />
-                <VideoListImg
-                  imgUrl={"./Superlist_files/625d7d376e467ebde3eb163a_card-light-10.jpg"} />
-              </div> */}
             </div>
           </div>
         </div>
@@ -439,6 +400,7 @@ export default function Home() {
           )}
         </div>
       </div>
+      {/* <FragmentsSvg /> */}
       <div style={{ marginBottom: "4%" }}></div>
       <footer id="signup" data-w-id="8912e0d8-13fa-7635-fd54-54fc5e19c5a3" className="footer">
         <div className="footer-shape w-embed">
