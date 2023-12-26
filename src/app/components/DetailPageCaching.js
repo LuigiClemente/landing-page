@@ -117,7 +117,7 @@ on the same page with data modeling upstream of every app.`,
                               backgroundColor: "var(--card-modeling-bg)",
                             }}
                           >
-                            <img src="/card-icons/microbes.svg" alt="" class="HeroAnimation_HeroAnimation__badge__Iqx8u" />
+                            <img src="/card-icons/microbes.svg" alt="" class="HeroAnimation_HeroAnimation__badge__Iqx8u sm:!w-[3.5vw] xl:!w-12" />
                             <span class="HeroAnimation_HeroAnimation__title__KFqGQ">Data Modeling</span>
                           </div>
                           <div
@@ -128,7 +128,7 @@ on the same page with data modeling upstream of every app.`,
                               border: "1px solid var(--card-access-border)",
                             }}
                           >
-                            <img src="/card-icons/nutrition.svg" alt="" class="HeroAnimation_HeroAnimation__badge__Iqx8u" />
+                            <img src="/card-icons/nutrition.svg" alt="" class="HeroAnimation_HeroAnimation__badge__Iqx8u sm:!w-[3.5vw] xl:!w-12" />
                             <span class="HeroAnimation_HeroAnimation__title__KFqGQ">Access Control</span>
                           </div>
                           <div

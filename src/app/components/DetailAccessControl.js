@@ -149,7 +149,7 @@ on the same page with data modeling upstream of every app.`,
                               border: "1px solid var(--card-caching-border)",
                             }}
                           >
-                            <img src="/card-icons/fat.svg" alt="" class="HeroAnimation_HeroAnimation__badge__Iqx8u" />
+                            <img src="/card-icons/fat.svg" alt="" class="HeroAnimation_HeroAnimation__badge__Iqx8u sm:!w-[3vw] xl:!w-10" />
                             <span class="HeroAnimation_HeroAnimation__title__KFqGQ">Caching</span>
                           </div>
                           <div

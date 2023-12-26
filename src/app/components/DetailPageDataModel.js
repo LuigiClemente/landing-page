@@ -128,7 +128,7 @@ export const DetailPageDataModel = (
                               border: "1px solid var(--card-access-border)",
                             }}
                           >
-                            <img src="/card-icons/nutrition.svg" alt="" class="HeroAnimation_HeroAnimation__badge__Iqx8u" />
+                            <img src="/card-icons/nutrition.svg" alt="" class="HeroAnimation_HeroAnimation__badge__Iqx8u sm:!w-[3.1vw] xl:!w-11" />
                             <span class="HeroAnimation_HeroAnimation__title__KFqGQ">Access Control</span>
                           </div>
                           <div
@@ -139,7 +139,7 @@ export const DetailPageDataModel = (
                               border: "1px solid var(--card-caching-border)",
                             }}
                           >
-                            <img src="/images/cube-scheme/badge-caching.svg" alt="" class="HeroAnimation_HeroAnimation__badge__Iqx8u" />
+                            <img src="/card-icons/fat.svg" alt="" class="HeroAnimation_HeroAnimation__badge__Iqx8u sm:!w-[2.6vw] xl:!w-9" />
                             <span class="HeroAnimation_HeroAnimation__title__KFqGQ">Caching</span>
                           </div>
                           <div

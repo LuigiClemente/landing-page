@@ -23922,7 +23922,6 @@ img.Testimonials_Testimonial__logo__ezK0H {
 
   .CubeSchema_CubeSchema__card_badge__1a_FX {
     justify-self: flex-end;
-    width: calc(24 / var(--card-size) * 100%) !important;
   }
 }
 
@@ -27093,7 +27092,7 @@ span.Breadcrumbs_Breadcrumbs__breadcrumb__Hq2NI {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 30%;
+  width: 20%;
   transform: translate(-50%, calc(-65%));
   filter: drop-shadow(0 8px 12px rgba(15, 15, 35, 0.12));
 }

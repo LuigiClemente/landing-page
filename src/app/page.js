@@ -121,13 +121,13 @@ export default function Home() {
     <main style={{ background: Colors.bodyColor }} className={`bg-[${Colors.bodyColor}]`}>
       <section id="hero-section" data-w-id="e2240eed-9ecb-9f4e-f566-b74c4e1cb7ac" className="hero-section">
         <div className="hero-wrapper cc-orange" style={{ backgroundColor: Colors.heroSectionSecondColor }}>
-          <div className="nav-spacer g-pointer-events-none flex items-center justify-end pr-10">
-            <a
-              href="https://cubecloud.dev/auth/signup"
-              className="w-32 h-10 text-sm md:w-36 md:h-11 md:text-sm lg:w-40 lg:h-12 lg:text-base Button_Button__VQ4Ej Button--appearance-light getStartedButton rounded-lg"
-            >
-              Get Started
-            </a>
+          <div className="nav-spacer g-pointer-events-none flex items-center justify-between px-10 gap-10">
+            <img className="w-24" src="/logo/eumaximo-high-res-black.jpeg" />
+            <div className="flex flex-col gap-2 items-end cursor-pointer">
+              <div className="h-0.5 bg-black w-7"></div>
+              <div className="h-0.5 bg-black w-4"></div>
+              <div className="h-0.5 bg-black w-7"></div>
+            </div>
           </div>
           <div className="hero-title-flex-wrapper">
             <HeroTitleFirst />
@@ -196,13 +196,13 @@ export default function Home() {
         </div>
         <div data-w-id="073af362-6ea5-34e3-4471-301acdd3fa11" style={{ width: "58.5156%", height: "120vh" }} className="hero-clipping-wrapper">
           <div className="hero-wrapper">
-            <div className="nav-spacer g-pointer-events-none flex items-center justify-end pr-10">
-              <a
-                href="https://cubecloud.dev/auth/signup"
-                className="w-32 h-10 text-sm md:w-36 md:h-11 md:text-sm lg:w-40 lg:h-12 lg:text-base Button_Button__VQ4Ej Button--appearance-light getStartedButton rounded-lg"
-              >
-                Get Started
-              </a>
+            <div className="nav-spacer g-pointer-events-none flex items-center justify-between px-10 gap-10">
+              <img className="w-24" src="/logo/eumaximo-high-res-white.jpeg" />
+              <div className="flex flex-col gap-2 items-end cursor-pointer">
+                <div className="h-0.5 bg-white w-7"></div>
+                <div className="h-0.5 bg-white w-4"></div>
+                <div className="h-0.5 bg-white w-7"></div>
+              </div>
             </div>
             <div className="hero-title-flex-wrapper">
               <HeroTitle headingColor={Colors.heroSectionSecondColor} />
