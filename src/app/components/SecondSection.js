@@ -167,7 +167,7 @@ const SecondSection = ({
               <p className="CubeSchema_CubeSchema__card_content__K1bdM">{animationCards[0].description}</p>
             </div>
             <div className="CubeSchema_CubeSchema__card_footer__YU7RW">
-              <img className="CubeSchema_CubeSchema__card_badge__1a_FX w-6 sm:w-[3.75vw] xl:w-12" src={"/card-icons/microbes.svg"} width="32" height="32" alt="Data Modeling badge" />
+              <img className="CubeSchema_CubeSchema__card_badge__1a_FX w-8 sm:w-[3.75vw] xl:w-12" src={"/card-icons/microbes.svg"} width="32" height="32" alt="Data Modeling badge" />
               <div style={{ cursor: "pointer" }} onClick={() => onPressReadMore("Modeling")} className="CubeSchema_CubeSchema__card_readMore__ovs9v">
                 Read more
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
@@ -193,7 +193,7 @@ const SecondSection = ({
               <p className="CubeSchema_CubeSchema__card_content__K1bdM">{animationCards[1].description}</p>
             </div>
             <div className="CubeSchema_CubeSchema__card_footer__YU7RW flex justify-end">
-              <img className="CubeSchema_CubeSchema__card_badge__1a_FX w-8 sm:w-[4.5vw] xl:w-[3.75rem]" src={"/card-icons/nutrition.svg"} width="32" height="32" alt="Access Control badge" />
+              <img className="CubeSchema_CubeSchema__card_badge__1a_FX w-8 sm:w-[3.5vw] xl:w-[3rem]" src={"/card-icons/nutrition.svg"} width="32" height="32" alt="Access Control badge" />
               <div style={{ cursor: "pointer" }} onClick={() => onPressReadMore("Access")} className="CubeSchema_CubeSchema__card_readMore__ovs9v">
                 Read more
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
@@ -219,7 +219,7 @@ const SecondSection = ({
               <p className="CubeSchema_CubeSchema__card_content__K1bdM">{animationCards[2].description}</p>
             </div>
             <div className="CubeSchema_CubeSchema__card_footer__YU7RW">
-              <img className="CubeSchema_CubeSchema__card_badge__1a_FX w-6 sm:w-[3.6vw] xl:w-12" src={"/card-icons/fat.svg"} width="32" height="32" alt="Caching badge" />
+              <img className="CubeSchema_CubeSchema__card_badge__1a_FX w-6 sm:w-[2.6vw] xl:w-9" src={"/card-icons/fat.svg"} width="32" height="32" alt="Caching badge" />
               <div style={{ cursor: "pointer" }} onClick={() => onPressReadMore("Caching")} className="CubeSchema_CubeSchema__card_readMore__ovs9v">
                 Read more
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
@@ -245,7 +245,7 @@ const SecondSection = ({
               <p className="CubeSchema_CubeSchema__card_content__K1bdM">{animationCards[3].description}</p>
             </div>
             <div className="CubeSchema_CubeSchema__card_footer__YU7RW">
-              <img className="CubeSchema_CubeSchema__card_badge__1a_FX w-6 sm:w-[4vw] xl:w-[3.2rem] xl:mt-11" src={"/card-icons/sugar.svg"} width="32" height="32" alt="APIs badge" />
+              <img className="CubeSchema_CubeSchema__card_badge__1a_FX w-9 sm:w-[4vw] xl:w-[3.2rem] xl:mt-11" src={"/card-icons/sugar.svg"} width="32" height="32" alt="APIs badge" />
               <div style={{ cursor: "pointer" }} onClick={() => onPressReadMore("Apis")} className="CubeSchema_CubeSchema__card_readMore__ovs9v">
                 Read more
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">

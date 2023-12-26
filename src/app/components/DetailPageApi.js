@@ -68,7 +68,7 @@ on the same page with data modeling upstream of every app.`,
                           <a
                             target="__blank"
                             href="https://cube.dev/contact"
-                            className="Button_Button__VQ4Ej Button--appearance-light ProductHeader_ProductHeader__button__fvePN Button_Button--cherry__FCGeq Button_Button--size-m__DGRm_"
+                            className="Button_Button__VQ4Ej getStartedButton Button--appearance-light ProductHeader_ProductHeader__button__fvePN Button_Button--cherry__FCGeq Button_Button--size-m__DGRm_"
                             style={{
                               height: "40px",
                               padding: "0 16px",
@@ -104,7 +104,7 @@ on the same page with data modeling upstream of every app.`,
                               backgroundColor: "var(--card-modeling-bg)",
                             }}
                           >
-                            <img src="/card-icons/microbes.svg" alt="" class="HeroAnimation_HeroAnimation__badge__Iqx8u" />
+                            <img src="/card-icons/microbes.svg" alt="" class="HeroAnimation_HeroAnimation__badge__Iqx8u sm:!w-[3.5vw] xl:!w-12" />
                             <span class="HeroAnimation_HeroAnimation__title__KFqGQ">Data Modeling</span>
                           </div>
                           <div
@@ -115,7 +115,7 @@ on the same page with data modeling upstream of every app.`,
                               border: "1px solid var(--card-access-border)",
                             }}
                           >
-                            <img src="/card-icons/nutrition.svg" alt="" class="HeroAnimation_HeroAnimation__badge__Iqx8u" />
+                            <img src="/card-icons/nutrition.svg" alt="" class="HeroAnimation_HeroAnimation__badge__Iqx8u sm:!w-[3.5vw] xl:!w-12" />
                             <span class="HeroAnimation_HeroAnimation__title__KFqGQ">Access Control</span>
                           </div>
                           <div
@@ -126,7 +126,7 @@ on the same page with data modeling upstream of every app.`,
                               border: "1px solid var(--card-caching-border)",
                             }}
                           >
-                            <img src="/card-icons/fat.svg" alt="" class="HeroAnimation_HeroAnimation__badge__Iqx8u" />
+                            <img src="/card-icons/fat.svg" alt="" class="HeroAnimation_HeroAnimation__badge__Iqx8u sm:!w-[2.6vw] xl:!w-9" />
                             <span class="HeroAnimation_HeroAnimation__title__KFqGQ">Caching</span>
                           </div>
                         </div>

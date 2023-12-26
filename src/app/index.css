@@ -1,4 +1,15 @@
 .getStartedButton {
   color: white;
-  background: linear-gradient(90deg, #226592 5%, #5caee4, #215d85 97%);
+  background: linear-gradient(90deg, #014601 5%, #008000, #014d01 97%);
+  border-width: 1px;
+  border-style: groove;
+  border-color: rgba(255, 255, 255, 0.589);
+}
+
+.triangle_blackoutLines__SQ3KJ {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  bottom: 0px;
+  inset: 0;
 }

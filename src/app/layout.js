@@ -10,7 +10,7 @@ const colors = {
   "--color-dark-blue": "#111122",
   "--card-access-bg": "#008000 ",
   "--card-modeling-bg": "#FFA500 ",
-  "--card-caching-bg": "#e9ce5d ",
+  "--card-caching-bg": "#e9ce5d",
   "--card-api-bg": "#F84F39",
   "--card-modeling-gradient-1": "#008000",
   "--card-modeling-gradient-2": "#008000",
