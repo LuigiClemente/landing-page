@@ -83,7 +83,7 @@ on the same page with data modeling upstream of every app.`,
   }
 ) => {
   return (
-    <div>
+    <div className="relative z-50">
       <div>
         {/* saved from url=(0038)https://cube.dev/product/data-modeling */}
 

@@ -51,7 +51,7 @@ on the same page with data modeling upstream of every app.`,
   }
 ) => {
   return (
-    <div>
+    <div className="relative z-50">
       <div>
         <div id="cube-ui-kit-root" className="sc-lllmON iRvEDh">
           <section>

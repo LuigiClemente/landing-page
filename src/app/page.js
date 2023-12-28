@@ -121,8 +121,8 @@ export default function Home() {
     <main style={{ background: Colors.bodyColor }} className={`bg-[${Colors.bodyColor}]`}>
       <section id="hero-section" data-w-id="e2240eed-9ecb-9f4e-f566-b74c4e1cb7ac" className="hero-section">
         <div className="hero-wrapper cc-orange" style={{ backgroundColor: Colors.heroSectionSecondColor }}>
-          <div className="nav-spacer g-pointer-events-none flex items-center justify-between px-10 gap-10">
-            <img className="w-24" src="/logo/eumaximo-high-res-black.jpeg" />
+          <div className="nav-spacer g-pointer-events-none flex items-center justify-between px-72 gap-10">
+            <img className="w-24" src="/logo/eumaximo-high-res-black.png" />
             <div className="flex flex-col gap-2 items-end cursor-pointer">
               <div className="h-0.5 bg-black w-7"></div>
               <div className="h-0.5 bg-black w-4"></div>
@@ -196,8 +196,8 @@ export default function Home() {
         </div>
         <div data-w-id="073af362-6ea5-34e3-4471-301acdd3fa11" style={{ width: "58.5156%", height: "120vh" }} className="hero-clipping-wrapper">
           <div className="hero-wrapper">
-            <div className="nav-spacer g-pointer-events-none flex items-center justify-between px-10 gap-10">
-              <img className="w-24" src="/logo/eumaximo-high-res-white.jpeg" />
+            <div className="nav-spacer g-pointer-events-none flex items-center justify-between px-72 gap-10">
+              <img className="w-24" src="/logo/eumaximo-high-res-white.png" />
               <div className="flex flex-col gap-2 items-end cursor-pointer">
                 <div className="h-0.5 bg-white w-7"></div>
                 <div className="h-0.5 bg-white w-4"></div>
@@ -314,54 +314,6 @@ export default function Home() {
                     />
                   </ul>
                 </div>
-                {/* <div role="list" className="hero-cards_collection-list w-dyn-items animate-infinite-scroll">
-                  <VideoListVideo
-                    imgUrl="./Superlist_files/625d7ae7005e9ed86c07f9d2_card-dark-01.jpg"
-                    videoUrl="https://res.cloudinary.com/superlist/video/upload/q_auto:good/v1653395915/website/mini%20cards/v2/Navigation_Bar_slpbkv.webm"
-                    secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/q_auto:good/v1653395915/website/mini%20cards/v2/Navigation_Bar_slpbkv.mp4"}
-                  />
-                  <VideoListVideo
-                    imgUrl="./Superlist_files/625d7c0ff20543fe572134c7_card-dark-02.jpg"
-                    videoUrl="https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395869/website/mini%20cards/v2/Animation_rel1jl.webm"
-                    secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395869/website/mini%20cards/v2/Animation_rel1jl.mp4"}
-                  />
-                  <VideoListVideo
-                    imgUrl="./Superlist_files/625d7c2c02a09d62bd379394_card-dark-03.jpg"
-                    videoUrl="https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395866/website/mini%20cards/v2/Animation_fzjx2c.webm"
-                    secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395866/website/mini%20cards/v2/Animation_fzjx2c.mp4"}
-                  />
-                  <VideoListVideo
-                    imgUrl="./Superlist_files/625d7c8f81d042b7eb2cc943_card-dark-04.jpg"
-                    videoUrl="https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395739/website/mini%20cards/v2/Animation_sqmqdq.webm"
-                    secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395739/website/mini%20cards/v2/Animation_sqmqdq.mp4"}
-                  />
-                  <VideoListImg imgUrl="./Superlist_files/625d7ca581d04264002cd5b7_card-dark-05.jpg" />
-                  <VideoListVideo
-                    imgUrl="./Superlist_files/625d7cf36e467e8560eafb7e_card-dark-06.jpg"
-                    videoUrl="https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395864/website/mini%20cards/v2/Animation_o0vvtn.webm"
-                    secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395864/website/mini%20cards/v2/Animation_o0vvtn.mp4"}
-                  />
-                  <VideoListVideo
-                    imgUrl="./Superlist_files/6467fed7899246757f8a5af6_Rep-min.png"
-                    videoUrl="https://res.cloudinary.com/superlist/video/upload/v1684536003/website/mini%20cards/v2/Repeat_tkjecn.webm"
-                    secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/v1684536003/website/mini%20cards/v2/Repeat_tkjecn.mp4"}
-                  />
-                  <VideoListVideo
-                    imgUrl="./Superlist_files/625d7d0f5730251fd2cff4a7_card-dark-08.jpg"
-                    videoUrl="https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395875/website/mini%20cards/v2/Animation_nk2ydp.webm"
-                    secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395875/website/mini%20cards/v2/Animation_nk2ydp.mp4"}
-                  />
-                  <VideoListVideo
-                    imgUrl="./Superlist_files/625d7d24676ac8166cabc2c4_card-dark-09.jpg"
-                    videoUrl="https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395889/website/mini%20cards/v2/Pitch_Deck_Covers_dbeuve.webm"
-                    secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395889/website/mini%20cards/v2/Pitch_Deck_Covers_dbeuve.mp4"}
-                  />
-                  <VideoListVideo
-                    imgUrl="./Superlist_files/625d7d3a60c6445253d2078a_card-dark-10.jpg"
-                    videoUrl="https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395888/website/mini%20cards/v2/App_Launch_al7bjr.webm"
-                    secondVideoUrl={"https://res.cloudinary.com/superlist/video/upload/c_scale,q_auto:good,w_700/v1653395888/website/mini%20cards/v2/App_Launch_al7bjr.mp4"}
-                  />
-                </div> */}
               </div>
             </div>
           </div>
@@ -375,7 +327,7 @@ export default function Home() {
       <Logo />
 
       <SecondSection onPressReadMore={(type) => scrollToHandler(type)} animationCards={Colors.animationCards} />
-      <div className="" ref={gradientBackground}>
+      <div ref={gradientBackground}>
         <SementaticLayerBottom {...secondSectionBottomData} />
         <div ref={scrolltoDiv}>
           {dataModeling && (
@@ -400,8 +352,8 @@ export default function Home() {
           )}
         </div>
       </div>
-      {/* <FragmentsSvg /> */}
-      <div style={{ marginBottom: "4%" }}></div>
+      <div className="" style={{ marginBottom: "4%" }}></div>
+      <FragmentsSvg />
       <footer id="signup" data-w-id="8912e0d8-13fa-7635-fd54-54fc5e19c5a3" className="footer">
         <div className="footer-shape w-embed">
           <svg width="100%" viewBox="0 0 1577 4307" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -411,9 +363,9 @@ export default function Home() {
                 dur="30s"
                 repeatCount="indefinite"
                 values="M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38 -124.064 412.605 117.161 0 356.759Z;
-M0 300.446V2126H1577V504.101C1360.04 335.784 1108.8 171.677 918.5 72.2294C571.912 -108.886 269.554 81.8469 0 300.446Z;
-M0 283.735V2056H1577V317.047C1369.34 129.452 1125.7 -19.1374 918.5 2.22934C525.4 42.7656 247.64 143.295 0 283.735Z;
-M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38 -124.064 412.605 117.161 0 356.759Z"
+              M0 300.446V2126H1577V504.101C1360.04 335.784 1108.8 171.677 918.5 72.2294C571.912 -108.886 269.554 81.8469 0 300.446Z;
+              M0 283.735V2056H1577V317.047C1369.34 129.452 1125.7 -19.1374 918.5 2.22934C525.4 42.7656 247.64 143.295 0 283.735Z;
+              M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38 -124.064 412.605 117.161 0 356.759Z"
               ></animate>
             </path>
           </svg>
