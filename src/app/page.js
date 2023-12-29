@@ -351,12 +351,12 @@ export default function Home() {
             </DetailPageApi>
           )}
         </div>
+        <FragmentsSvg />
       </div>
       <div className="" style={{ marginBottom: "4%" }}></div>
-      <FragmentsSvg />
       <footer id="signup" data-w-id="8912e0d8-13fa-7635-fd54-54fc5e19c5a3" className="footer">
         <div className="footer-shape w-embed">
-          <svg width="100%" viewBox="0 0 1577 4307" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="100%" viewBox="0 0 1577 4307" fill="none" className=" relative z-10" xmlns="http://www.w3.org/2000/svg">
             <path fill={Colors.footerColor}>
               <animate
                 attributeName="d"
@@ -370,7 +370,7 @@ export default function Home() {
             </path>
           </svg>
         </div>
-        <div className="container-footer-title">
+        <div className="container-footer-title relative z-30">
           <p className="heading-medium g-text-align-center g-margin-b-medium">
             <span className="g-text-color-white">Apply</span>
             <span className="text-black">to join our private beta</span>
