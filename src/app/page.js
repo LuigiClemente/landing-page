@@ -107,13 +107,13 @@ export default function Home() {
 
   useEffect(() => {
     if (dataModeling) {
-      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #008000, white 95%)";
+      gradientBackground.current.style.background = "linear-gradient(180deg, white 0%, #008000, #111122 95%)";
     } else if (dataCaching) {
-      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #e9ce5d, white 95%)";
+      gradientBackground.current.style.background = "linear-gradient(180deg, white 0%, #e9ce5d, #111122 95%)";
     } else if (dataAccess) {
-      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #FFA500, white 95%)";
+      gradientBackground.current.style.background = "linear-gradient(180deg, white 0%, #FFA500, #111122 95%)";
     } else if (dataApi) {
-      gradientBackground.current.style.background = "linear-gradient(180deg, #111122 0%, #F84F39, white 95%)";
+      gradientBackground.current.style.background = "linear-gradient(180deg, white 0%, #F84F39, #111122 95%)";
     }
   }, [dataModeling, dataCaching, dataAccess, dataApi]);
 
