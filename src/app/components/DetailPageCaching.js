@@ -92,7 +92,7 @@ on the same page with data modeling upstream of every app.`,
                               flexShrink: "unset",
                             }}
                           >
-                            Get Started
+                            Inscrever-se
                           </a>
                         </div>
                       </div>

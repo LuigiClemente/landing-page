@@ -5,8 +5,8 @@ function SementaticLayer({
   countingMembers = "8,890",
   MembersText = "members",
   starText = "stars",
-  title = "The Semantic Layer<>for every data app",
-  description = "Connect data silos, drive consistent metrics, and power your AI and analytics with context.",
+  title = "Camada Semântica em Nutrição<>estudos globais personalizados",
+  description = "Traduzindo pesquisas de universidades líderes em planos nutricionais únicos, moldando sua jornada de saúde personalizada.",
 }) {
   return (
     <div
@@ -22,7 +22,7 @@ function SementaticLayer({
         <p className="Home_SectionHeader__subtitle__pn9hg">{description}</p>
         <div className="Home_SectionHeader__buttons__jwSY4">
           <a href="https://cubecloud.dev/auth/signup" className="Button_Button__VQ4Ej Button--appearance-light getStartedButton Button_Button--size-l__ia8eU">
-            Get Started
+            Inscrever-sed
           </a>
           {/* <a style={{visibility:'hidden'}} className="Button_Button__VQ4Ej Button_Button--appearance-dark__b0Eeg Button_Button--cherry__FCGeq Button_Button--size-l__ia8eU Button_Button--variant-outline__oaRuC" href="/contact">Request a demo</a> */}
         </div>

@@ -21,8 +21,8 @@ const secondSectionTopData = {
   countingMembers: "8,890",
   MembersText: "members",
   starText: "stars",
-  title: "The Semantic Layer<>for every data app",
-  description: "Connect data silos, drive consistent metrics, and power your AI and analytics with context.",
+  title: "Camada Semântica em Nutrição<>estudos globais personalizados",
+  description: "Traduzindo pesquisas de universidades líderes em planos nutricionais únicos, moldando sua jornada de saúde personalizada.",
 };
 const secondSectionBottomData = {
   title: "O que é a Camada Semântica?",
@@ -107,13 +107,13 @@ export default function Home() {
 
   useEffect(() => {
     if (dataModeling) {
-      gradientBackground.current.style.background = "linear-gradient(180deg,  #111122 0%, #008000, #111122 95%)";
+      gradientBackground.current.style.background = "linear-gradient(180deg,  #111122 0%, #008000)";
     } else if (dataCaching) {
-      gradientBackground.current.style.background = "linear-gradient(180deg,  #111122 0%, #e9ce5d, #111122 95%)";
+      gradientBackground.current.style.background = "linear-gradient(180deg,  #111122 0%, #e9ce5d)";
     } else if (dataAccess) {
-      gradientBackground.current.style.background = "linear-gradient(180deg,  #111122 0%, #FFA500, #111122 95%)";
+      gradientBackground.current.style.background = "linear-gradient(180deg,  #111122 0%, #FFA500)";
     } else if (dataApi) {
-      gradientBackground.current.style.background = "linear-gradient(180deg,  #111122 0%, #F84F39, #111122 95%)";
+      gradientBackground.current.style.background = "linear-gradient(180deg,  #111122 0%, #F84F39)";
     }
   }, [dataModeling, dataCaching, dataAccess, dataApi]);
 
@@ -197,7 +197,7 @@ export default function Home() {
         <div data-w-id="073af362-6ea5-34e3-4471-301acdd3fa11" style={{ width: "58.5156%", height: "120vh" }} className="hero-clipping-wrapper">
           <div className="hero-wrapper">
             <div className="nav-spacer g-pointer-events-none flex items-center justify-between px-72 gap-10">
-              <img className="w-32" src="/logo/eumaximo-high-res-white.png" />
+              <img className="w-32 " src="/logo/eumaximo-high-res-white.png" />
               <div className="flex flex-col gap-2 items-end cursor-pointer">
                 <div className="h-0.5 bg-white w-7"></div>
                 <div className="h-0.5 bg-white w-4"></div>

@@ -103,7 +103,7 @@ export const DetailPageDataModel = (
                               flexShrink: "unset",
                             }}
                           >
-                            Get Started
+                            Inscrever-se
                           </a>
                         </div>
                       </div>

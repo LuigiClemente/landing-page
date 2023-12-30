@@ -89,7 +89,7 @@ objects: cubes and views.`,
                               flexShrink: "unset",
                             }}
                           >
-                            Get Started
+                            Inscrever-se
                           </a>
                         </div>
                       </div>
