@@ -107,13 +107,13 @@ export default function Home() {
 
   useEffect(() => {
     if (dataModeling) {
-      gradientBackground.current.style.background = "linear-gradient(180deg, white 0%, #008000, #111122 95%)";
+      gradientBackground.current.style.background = "linear-gradient(180deg,  #111122 0%, #008000, #111122 95%)";
     } else if (dataCaching) {
-      gradientBackground.current.style.background = "linear-gradient(180deg, white 0%, #e9ce5d, #111122 95%)";
+      gradientBackground.current.style.background = "linear-gradient(180deg,  #111122 0%, #e9ce5d, #111122 95%)";
     } else if (dataAccess) {
-      gradientBackground.current.style.background = "linear-gradient(180deg, white 0%, #FFA500, #111122 95%)";
+      gradientBackground.current.style.background = "linear-gradient(180deg,  #111122 0%, #FFA500, #111122 95%)";
     } else if (dataApi) {
-      gradientBackground.current.style.background = "linear-gradient(180deg, white 0%, #F84F39, #111122 95%)";
+      gradientBackground.current.style.background = "linear-gradient(180deg,  #111122 0%, #F84F39, #111122 95%)";
     }
   }, [dataModeling, dataCaching, dataAccess, dataApi]);
 
@@ -122,7 +122,7 @@ export default function Home() {
       <section id="hero-section" data-w-id="e2240eed-9ecb-9f4e-f566-b74c4e1cb7ac" className="hero-section">
         <div className="hero-wrapper cc-orange" style={{ backgroundColor: Colors.heroSectionSecondColor }}>
           <div className="nav-spacer g-pointer-events-none flex items-center justify-between px-72 gap-10">
-            <img className="w-24" src="/logo/eumaximo-high-res-black.png" />
+            <img className="w-32" src="/logo/eumaximo-high-res-black.png" />
             <div className="flex flex-col gap-2 items-end cursor-pointer">
               <div className="h-0.5 bg-black w-7"></div>
               <div className="h-0.5 bg-black w-4"></div>
@@ -197,7 +197,7 @@ export default function Home() {
         <div data-w-id="073af362-6ea5-34e3-4471-301acdd3fa11" style={{ width: "58.5156%", height: "120vh" }} className="hero-clipping-wrapper">
           <div className="hero-wrapper">
             <div className="nav-spacer g-pointer-events-none flex items-center justify-between px-72 gap-10">
-              <img className="w-24" src="/logo/eumaximo-high-res-white.png" />
+              <img className="w-32" src="/logo/eumaximo-high-res-white.png" />
               <div className="flex flex-col gap-2 items-end cursor-pointer">
                 <div className="h-0.5 bg-white w-7"></div>
                 <div className="h-0.5 bg-white w-4"></div>
@@ -353,7 +353,7 @@ export default function Home() {
         </div>
         <FragmentsSvg />
       </div>
-      <div className="" style={{ marginBottom: "4%" }}></div>
+      <div style={{ marginBottom: "4%" }}></div>
       <footer id="signup" data-w-id="8912e0d8-13fa-7635-fd54-54fc5e19c5a3" className="footer">
         <div className="footer-shape w-embed">
           <svg width="100%" viewBox="0 0 1577 4307" fill="none" className=" relative z-10" xmlns="http://www.w3.org/2000/svg">
