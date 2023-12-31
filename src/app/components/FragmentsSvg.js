@@ -2,7 +2,7 @@ import React from "react";
 
 const FragmentsSvg = () => {
   return (
-    <svg aria-hidden="true" className="absolute w-[300rem] h-[70rem] -translate-y-[24rem] z-10" viewBox="952.75 -344.096 4310.776 1589.556" width="100%">
+    <svg aria-hidden="true" className="hidden sm:block absolute w-[200rem] sm:w-[300rem] h-[70rem] -translate-y-[24rem] z-10" viewBox="952.75 -344.096 4310.776 1589.556" width="100%">
       {/* // <svg aria-hidden="true" className="absolute w-[250rem] h-[70rem] -translate-y-[40rem] z-10" viewBox="700.841 -704.782 4358.867 1950.242" width="100%"> */}
       {/* <g fill="var(--geist-background)" transform="matrix(2.744015, 0, 0, 2.744015, -822.869263, 2703.770264)">
         <path
