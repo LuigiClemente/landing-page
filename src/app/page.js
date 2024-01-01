@@ -107,7 +107,7 @@ export default function Home() {
 
   useEffect(() => {
     if (dataModeling) {
-      gradientBackground.current.style.background = "linear-gradient(180deg,  #111122 0%, #008000)";
+      gradientBackground.current.style.background = "linear-gradient(180deg,  #111122 0%, #008000 20%)";
     } else if (dataCaching) {
       gradientBackground.current.style.background = "linear-gradient(180deg,  #111122 0%, #e9ce5d)";
     } else if (dataAccess) {
