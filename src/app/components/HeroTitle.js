@@ -7,7 +7,7 @@ function HeroTitle({ color = "#F84F39", heading = "Supernatural ao", headingColo
         transform: "translate3d(0%, 0vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
         transformStyle: "preserve-3d",
       }}
-      class="container-hero-title w-clearfix !max-w-2xl"
+      class="container-hero-title w-clearfix !max-w-xl !text-left"
     >
       <h1 class="heading-large g-text-align-center g-display-inline-text">
         {heading}
@@ -15,7 +15,7 @@ function HeroTitle({ color = "#F84F39", heading = "Supernatural ao", headingColo
       </h1>
       <div class="handwritten-text-wrapper pt-4">
         <div class="hero-line-embed w-embed" style={{ display: "block" }}>
-          <img src="/title/anoitecer.png" className="relative top-6 right-11 md:w-80" />
+          <img src="/title/anoitecer.png" className="relative top-3 right-[6rem] md:w-[23.5rem]" />
         </div>
       </div>
     </div>
