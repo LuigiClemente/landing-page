@@ -1,13 +1,13 @@
 import React from "react";
 
-function HeroTitle({ color = "#F84F39", heading = "Energia constante ao", headingColor }) {
+function HeroTitle({ color = "#F84F39", heading = "Se transforme ao", headingColor }) {
   return (
     <div
       style={{
         transform: "translate3d(0%, 0vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
         transformStyle: "preserve-3d",
       }}
-      class="container-hero-title w-clearfix"
+      class="container-hero-title w-clearfix !max-w-2xl"
     >
       <h1 class="heading-large g-text-align-center g-display-inline-text">
         {heading}
@@ -15,7 +15,7 @@ function HeroTitle({ color = "#F84F39", heading = "Energia constante ao", headin
       </h1>
       <div class="handwritten-text-wrapper pt-4">
         <div class="hero-line-embed w-embed" style={{ display: "block" }}>
-          <img src="/title/anoitecer.png" className="relative top-7 right-20 md:w-80" />
+          <img src="/title/anoitecer.png" className="relative top-6 right-3 md:w-80" />
         </div>
       </div>
     </div>

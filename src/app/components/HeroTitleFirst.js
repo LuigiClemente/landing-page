@@ -14,7 +14,7 @@ function HeroTitleFirst({ color = "#F84F39", heading = "Energia constante ao", h
       </h1>
       <div class="handwritten-text-wrapper">
         <div class="hero-line-embed w-embed" style={{ display: "block" }}>
-          <img src="/title/amanhecer.png" className="relative top-12 right-20 w-[22.5rem]" />
+          <img src="/title/amanhecer.png" className="relative top-11 right-20 w-[22.5rem]" />
         </div>
       </div>
     </div>
