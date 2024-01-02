@@ -1,6 +1,6 @@
 import React from "react";
 
-function HeroTitle({ color = "#F84F39", heading = "Se transforme ao", headingColor }) {
+function HeroTitle({ color = "#F84F39", heading = "Supernatural ao", headingColor }) {
   return (
     <div
       style={{
@@ -15,7 +15,7 @@ function HeroTitle({ color = "#F84F39", heading = "Se transforme ao", headingCol
       </h1>
       <div class="handwritten-text-wrapper pt-4">
         <div class="hero-line-embed w-embed" style={{ display: "block" }}>
-          <img src="/title/anoitecer.png" className="relative top-6 right-3 md:w-80" />
+          <img src="/title/anoitecer.png" className="relative top-6 right-11 md:w-80" />
         </div>
       </div>
     </div>
