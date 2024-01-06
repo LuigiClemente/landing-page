@@ -72,7 +72,7 @@ export const DetailPageDataModel = (
   }
 ) => {
   return (
-    <div>
+    <div className="relative z-50">
       <div>
         <div id="cube-ui-kit-root" className="sc-lllmON iRvEDh">
           <section>
@@ -103,7 +103,7 @@ export const DetailPageDataModel = (
                               flexShrink: "unset",
                             }}
                           >
-                            Get Started
+                            Inscrever-se
                           </a>
                         </div>
                       </div>
