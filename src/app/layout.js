@@ -79,6 +79,7 @@ export default function RootLayout({ children }) {
       <Script id="javascript8" src="./Superlist_files/webflow.42a6ebbcb.js.download" type="text/javascript"></Script>
       <Script id="javascript9" type="text/javascript" src="./Superlist_files/emojibutton.js.download"></Script>
       <Script id="javascript10" src="./Superlist_files/superlist-old-script.js.download"></Script>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <body className={inter.className}>{children}</body>
     </html>
   );

@@ -11836,9 +11836,6 @@ body {
   height: 100%;
 }
 
-.g-pointer-events-none {
-  pointer-events: none;
-}
 
 /* .w--tab-active .tabs_statement-wrapper {
 background-color: chocolate;

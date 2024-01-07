@@ -1,0 +1,17 @@
+const Menu = () => {
+  const items = ["Aisle", "About", "Work", "Careers", "Contanct"];
+
+  const Item = ({ title, setMenuIsActive }) => {
+    return <p className="text-4xl text-black" >{title}</p>;
+  };
+
+  return (
+    <div id="menu" className="w-full h-screen z-[110] absolute -translate-y-full duration-1000 bg-white flex flex-col items-center justify-center gap-10">
+      {items.map((i) => {
+        return <Item title={i} />;
+      })}
+    </div>
+  );
+};
+
+export default Menu;

@@ -14,7 +14,7 @@ function HeroTitleFirst({ color = "#F84F39", heading = "Supernatural ao", headin
       </h1>
       <div class="handwritten-text-wrapper">
         <div class="hero-line-embed w-embed" style={{ display: "block" }}>
-          <img src="/title/amanhecer.png" className="relative w-56 top-7 right-8 sm:right-[6rem] md:w-[27rem]" />
+          <img src="/title/amanhecer.png" className="relative w-56 top-7 right-16 sm:right-[6rem] md:w-[27rem]" />
         </div>
       </div>
     </div>
