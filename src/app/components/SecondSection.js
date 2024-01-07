@@ -47,19 +47,19 @@ const SecondSection = ({
 
           <div className="flex flex-col gap-[2.3vw] sm:gap-1.5 md:gap-2">
             <div className="flex sm:flex-col gap-[2.3vw] sm:gap-1.5 md:gap-2">
-              <SectionBox className="sm:opacity-10 block sm:hidden" imageText="Athena" />
-              <SectionBox className="sm:opacity-20" imageText="Trino" />
-              <SectionBox className="sm:opacity-50" imageText="Snowflake" />
+              <SectionBox className="sm:opacity-10 block sm:hidden" image="Athena" text="Sob-Mediada" />
+              <SectionBox className="sm:opacity-20" image="Trino" text="Bem-Estar" />
+              <SectionBox className="sm:opacity-50" image="Snowflake" />
             </div>
             <div className="flex sm:flex-col gap-[2.3vw] sm:gap-1.5 md:gap-2">
-              <SectionBox className="sm:opacity-80" imageText="Redshift" />
-              <SectionBox imageText="Presto" />
-              <SectionBox className="sm:opacity-80" imageText="Postgres" />
+              <SectionBox className="sm:opacity-80" image="Redshift" />
+              <SectionBox image="Presto" />
+              <SectionBox className="sm:opacity-80" image="Postgres" />
             </div>
             <div className="flex sm:flex-col gap-[2.3vw] sm:gap-1.5 md:gap-2">
-              <SectionBox className="sm:opacity-50" imageText="Databricks" />
-              <SectionBox className="sm:opacity-20" imageText="ClickHouse" />
-              <SectionBox className="sm:opacity-10 block sm:hidden" imageText="Bigquery" />
+              <SectionBox className="sm:opacity-50" image="Databricks" />
+              <SectionBox className="sm:opacity-20" image="ClickHouse" />
+              <SectionBox className="sm:opacity-10 block sm:hidden" image="Bigquery" />
             </div>
           </div>
 
