@@ -2,7 +2,7 @@ const Menu = () => {
   const items = ["Aisle", "About", "Work", "Careers", "Contanct"];
 
   const Item = ({ title, setMenuIsActive }) => {
-    return <p className="text-4xl text-black" >{title}</p>;
+    return <p className="text-5xl text-black" >{title}</p>;
   };
 
   return (

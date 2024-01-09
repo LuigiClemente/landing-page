@@ -122,14 +122,43 @@ export default function Home() {
 
   useEffect(() => {
     const menuItem = document.getElementById("menu");
+
+    const line1 = document.getElementById("menuLine1");
+    const line2 = document.getElementById("menuLine2");
+    const line3 = document.getElementById("menuLine3");
+
+    function xIconAnimate(openState) {
+      if (openState) {
+        line2.classList.remove("opacity-1");
+        line2.classList.add("opacity-0");
+        line1.classList.remove("rotate-0");
+        line3.classList.remove("rotate-0");
+        line1.classList.add("rotate-45");
+        line3.classList.add("-rotate-45");
+        line1.classList.add("relative");
+        line1.classList.add("top-[1.25rem]");
+      } else {
+        line2.classList.remove("opacity-0");
+        line2.classList.add("opacity-1");
+        line1.classList.remove("rotate-45");
+        line3.classList.remove("-rotate-45");
+        line1.classList.add("rotate-0");
+        line3.classList.add("rotate-0");
+        line1.classList.remove("relative");
+        line1.classList.remove("top-[1.25rem]");
+      }
+    }
+
     if (menuIsActive) {
       document.body.style.overflow = "hidden";
       menuItem.classList.remove("-translate-y-full");
       menuItem.classList.add("translate-y-0");
+      xIconAnimate(true);
     } else {
       document.body.style.overflow = "scroll";
       menuItem.classList.remove("translate-y-0");
       menuItem.classList.add("-translate-y-full");
+      xIconAnimate(false);
     }
   }, [menuIsActive]);
 
@@ -147,18 +176,11 @@ export default function Home() {
                 setMenuIsActive(!menuIsActive);
               }}
             >
-              {!menuIsActive ? (
-                <>
-                  <div className="h-0.5 bg-black w-7"></div>
-                  <div className="h-0.5 bg-black w-4"></div>
-                  <div className="h-0.5 bg-black w-7"></div>
-                </>
-              ) : (
-                <>
-                  <div className="h-0.5 bg-black w-7"></div>
-                  <div className="h-0.5 bg-black w-7"></div>
-                </>
-              )}
+              <>
+                <div id="menuLine1" className="h-0.5 duration-500 bg-black w-7"></div>
+                <div id="menuLine2" className="h-0.5 duration-500 bg-black w-4"></div>
+                <div id="menuLine3" className="h-0.5 duration-500 bg-black w-7"></div>
+              </>
             </div>
           </div>
           <div className="hero-title-flex-wrapper">
