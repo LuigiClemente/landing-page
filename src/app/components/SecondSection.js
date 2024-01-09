@@ -47,19 +47,19 @@ const SecondSection = ({
 
           <div className="flex flex-col gap-[2.3vw] sm:gap-1.5 md:gap-2">
             <div className="flex sm:flex-col gap-[2.3vw] sm:gap-1.5 md:gap-2">
-              <SectionBox className="sm:opacity-10 block sm:hidden" imageText="Athena" />
-              <SectionBox className="sm:opacity-20" imageText="Trino" />
-              <SectionBox className="sm:opacity-50" imageText="Snowflake" />
+              <SectionBox imageClass="w-[22%]" className="sm:opacity-10 block sm:hidden !pl-1" image="Athena" text="Sob-Mediada" />
+              <SectionBox className="sm:opacity-20" image="Trino" text="Bem-Estar" />
+              <SectionBox imageClass="w-[22%]" className="sm:opacity-50 !pl-1" image="Snowflake" text="Lipídios" />
             </div>
             <div className="flex sm:flex-col gap-[2.3vw] sm:gap-1.5 md:gap-2">
-              <SectionBox className="sm:opacity-80" imageText="Redshift" />
-              <SectionBox imageText="Presto" />
-              <SectionBox className="sm:opacity-80" imageText="Postgres" />
+              <SectionBox className="sm:opacity-80" image="Redshift" text="Metas" />
+              <SectionBox image="Presto" text="Cardíaco" />
+              <SectionBox className="sm:opacity-80" image="Postgres" text="Nutrição" />
             </div>
             <div className="flex sm:flex-col gap-[2.3vw] sm:gap-1.5 md:gap-2">
-              <SectionBox className="sm:opacity-50" imageText="Databricks" />
-              <SectionBox className="sm:opacity-20" imageText="ClickHouse" />
-              <SectionBox className="sm:opacity-10 block sm:hidden" imageText="Bigquery" />
+              <SectionBox imageClass="w-[22%]" className="sm:opacity-50 !pl-1" image="Databricks" text="Glicose" />
+              <SectionBox className="sm:opacity-20" image="ClickHouse" text="Metabolismo" />
+              <SectionBox className="sm:opacity-10 block sm:hidden" image="Bigquery" text="Biologia" />
             </div>
           </div>
 
@@ -138,7 +138,7 @@ const SecondSection = ({
               />
               <text
                 style={{ fill: "white", fontFamily: "Inter, sans-serif", fontSize: "23.7904px", lineHeight: "38.0647px", whiteSpace: "pre" }}
-                transform="matrix(12.824088, 0, 0, 12.738034, -336.01297, 8738.233398)"
+                transform="matrix(12.824088, 0, 0, 12.738034, -436.01297, 8738.233398)"
               >
                 Camada Semântica
               </text>

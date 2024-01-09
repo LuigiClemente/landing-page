@@ -16,6 +16,7 @@ import SemanticCards from "./components/SemanticCards";
 import Logo from "./components/Logo";
 import { logging } from "../../next.config";
 import FragmentsSvg from "./components/FragmentsSvg";
+import Menu from "./components/menu";
 const secondSectionTopData = {
   counting: "16,439",
   countingMembers: "8,890",
@@ -117,16 +118,69 @@ export default function Home() {
     }
   }, [dataModeling, dataCaching, dataAccess, dataApi]);
 
+  const [menuIsActive, setMenuIsActive] = useState(false);
+
+  useEffect(() => {
+    const menuItem = document.getElementById("menu");
+
+    const line1 = document.getElementById("menuLine1");
+    const line2 = document.getElementById("menuLine2");
+    const line3 = document.getElementById("menuLine3");
+
+    function xIconAnimate(openState) {
+      if (openState) {
+        line2.classList.remove("opacity-1");
+        line2.classList.add("opacity-0");
+        line1.classList.remove("rotate-0");
+        line3.classList.remove("rotate-0");
+        line1.classList.add("rotate-45");
+        line3.classList.add("-rotate-45");
+        line1.classList.add("relative");
+        line1.classList.add("top-[1.25rem]");
+      } else {
+        line2.classList.remove("opacity-0");
+        line2.classList.add("opacity-1");
+        line1.classList.remove("rotate-45");
+        line3.classList.remove("-rotate-45");
+        line1.classList.add("rotate-0");
+        line3.classList.add("rotate-0");
+        line1.classList.remove("relative");
+        line1.classList.remove("top-[1.25rem]");
+      }
+    }
+
+    if (menuIsActive) {
+      document.body.style.overflow = "hidden";
+      menuItem.classList.remove("-translate-y-full");
+      menuItem.classList.add("translate-y-0");
+      xIconAnimate(true);
+    } else {
+      document.body.style.overflow = "scroll";
+      menuItem.classList.remove("translate-y-0");
+      menuItem.classList.add("-translate-y-full");
+      xIconAnimate(false);
+    }
+  }, [menuIsActive]);
+
   return (
     <main style={{ background: Colors.bodyColor }} className={`bg-[${Colors.bodyColor}]`}>
+      <Menu />
+
       <section id="hero-section" data-w-id="e2240eed-9ecb-9f4e-f566-b74c4e1cb7ac" className="hero-section">
         <div className="hero-wrapper cc-orange" style={{ backgroundColor: Colors.heroSectionSecondColor }}>
-          <div className="nav-spacer g-pointer-events-none flex items-center justify-between px-5 sm:px-20 lg:px-48 xl:px-72 gap-10">
+          <div className="nav-spacer flex items-center justify-between px-5 sm:px-20 lg:px-48 xl:px-72 gap-10">
             <img className="w-24 sm:w-32" src="/logo/eumaximo-high-res-black.png" />
-            <div className="flex flex-col gap-2 items-end cursor-pointer">
-              <div className="h-0.5 bg-black w-7"></div>
-              <div className="h-0.5 bg-black w-4"></div>
-              <div className="h-0.5 bg-black w-7"></div>
+            <div
+              className={`flex flex-col gap-2 items-end cursor-pointer ${menuIsActive ? "z-[120]" : ""}`}
+              onClick={() => {
+                setMenuIsActive(!menuIsActive);
+              }}
+            >
+              <>
+                <div id="menuLine1" className="h-0.5 duration-500 bg-black w-7"></div>
+                <div id="menuLine2" className="h-0.5 duration-500 bg-black w-4"></div>
+                <div id="menuLine3" className="h-0.5 duration-500 bg-black w-7"></div>
+              </>
             </div>
           </div>
           <div className="hero-title-flex-wrapper">
@@ -198,7 +252,12 @@ export default function Home() {
           <div className="hero-wrapper">
             <div className="nav-spacer g-pointer-events-none flex items-center justify-between px-5 sm:px-20 lg:px-48 xl:px-72 gap-10">
               <img className="w-24 sm:w-32" src="/logo/eumaximo-high-res-white.png" />
-              <div className="flex flex-col gap-2 items-end cursor-pointer">
+              <div
+                className="flex flex-col gap-2 items-end cursor-pointer"
+                onClick={() => {
+                  setMenuIsActive(!menuIsActive);
+                }}
+              >
                 <div className="h-0.5 bg-white w-7"></div>
                 <div className="h-0.5 bg-white w-4"></div>
                 <div className="h-0.5 bg-white w-7"></div>

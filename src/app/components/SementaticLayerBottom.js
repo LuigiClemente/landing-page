@@ -8,6 +8,11 @@ function SementaticLayerBottom({
     performant, and accessible across every application.`,
   smallDescription = "More about Cube’s Semantic Layer",
 }) {
+  const clickHandler = () => {
+    const element = document.querySelector(".ProductFeatureCard_ProductFeatureCard__title__0ZCuD");
+    element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+  };
+
   return (
     <div
       style={{ marginTop: "5vh", scale: "0.87", marginBottom: "25vh" }}
@@ -17,7 +22,7 @@ function SementaticLayerBottom({
       <div className="Page_SectionHeader__content__OvDy1">
         {description}
         <br />
-        <a href="https://cube.dev/use-cases/semantic-layer" className="Home_SectionHero__link__6RmKg">
+        <a onClick={clickHandler} className="Home_SectionHero__link__6RmKg">
           <span>{smallDescription}</span>
           <span>
             <svg xmlns="http://www.w3.org/2000/svg" width={14} height={32} viewBox="0 0 14 32" fill="none">
