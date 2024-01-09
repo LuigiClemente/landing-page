@@ -52,16 +52,14 @@ const SecondSection = ({
               <SectionBox imageClass="w-[22%]" className="sm:opacity-50 !pl-1" image="Snowflake" text="Lipídios" />
             </div>
             <div className="flex sm:flex-col gap-[2.3vw] sm:gap-1.5 md:gap-2">
-              <SectionBox className="sm:opacity-80" image="Redshift" text="Metas"/>
+              <SectionBox className="sm:opacity-80" image="Redshift" text="Metas" />
               <SectionBox image="Presto" text="Cardíaco" />
               <SectionBox className="sm:opacity-80" image="Postgres" text="Nutrição" />
             </div>
             <div className="flex sm:flex-col gap-[2.3vw] sm:gap-1.5 md:gap-2">
               <SectionBox imageClass="w-[22%]" className="sm:opacity-50 !pl-1" image="Databricks" text="Glicose" />
               <SectionBox className="sm:opacity-20" image="ClickHouse" text="Metabolismo" />
-              <SectionBox className="sm:opacity-10 block sm:hidden" image="Bigquery" text="Biologia"/>
-
-              
+              <SectionBox className="sm:opacity-10 block sm:hidden" image="Bigquery" text="Biologia" />
             </div>
           </div>
 
@@ -140,7 +138,7 @@ const SecondSection = ({
               />
               <text
                 style={{ fill: "white", fontFamily: "Inter, sans-serif", fontSize: "23.7904px", lineHeight: "38.0647px", whiteSpace: "pre" }}
-                transform="matrix(12.824088, 0, 0, 12.738034, -336.01297, 8738.233398)"
+                transform="matrix(12.824088, 0, 0, 12.738034, -436.01297, 8738.233398)"
               >
                 Camada Semântica
               </text>
