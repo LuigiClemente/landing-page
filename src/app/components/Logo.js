@@ -7,25 +7,25 @@ function Logo({ logos = ["/colleges/harvard.svg", "/colleges/kcl-.svg", "/colleg
         {/* {logos.map((item) => ( */}
         <div className="flex items-center justify-start">
           <img
-            className="CompaniesTicker_SectionHero__company__JHm0L !flex !items-center !justify-center w-fit !h-[3vw] sm:!h-[1.3vw] xl:!h-5 2xl:!h-6 invert opacity-60"
+            className="CompaniesTicker_SectionHero__company__JHm0L !flex !items-center !justify-center w-fit !h-[3.5vw] sm:!h-[1.3vw] xl:!h-5 2xl:!h-6 invert opacity-60"
             src={"/colleges/harvard.svg"}
           />
         </div>
         <div className="flex items-center justify-end">
           <img
-            className="CompaniesTicker_SectionHero__company__JHm0L !flex !items-center !justify-center w-fit !h-[1.8vw] sm:!ml-8 sm:!h-[1vw] xl:!h-3 2xl:!h-4 invert xl:!ml-20 opacity-60"
+            className="CompaniesTicker_SectionHero__company__JHm0L !flex !items-center !justify-center w-fit !h-[2.3vw] sm:!ml-8 sm:!h-[1vw] xl:!h-3 2xl:!h-4 invert xl:!ml-20 opacity-60"
             src={"/colleges/kcl-.svg"}
           />
         </div>
         <div className="flex items-center justify-start">
           <img
-            className="CompaniesTicker_SectionHero__company__JHm0L !flex !items-center !justify-center w-fit !h-[2.8vw] sm:!ml-8 sm:!h-[1.3vw] xl:!h-5 2xl:!h-6 invert xl:!ml-20 opacity-60"
+            className="CompaniesTicker_SectionHero__company__JHm0L !flex !items-center !justify-center w-fit !h-[3.3vw] sm:!ml-8 sm:!h-[1.3vw] xl:!h-5 2xl:!h-6 invert xl:!ml-20 opacity-60"
             src={"/colleges/stanford.svg"}
           />
         </div>
         <div className="flex items-center justify-end">
           <img
-            className="CompaniesTicker_SectionHero__company__JHm0L !flex !items-center !justify-center w-fit !h-[3.5vw] sm:!ml-3 sm:!h-[1.55vw] xl:!h-6 2xl:!h-7 invert xl:!ml-6 opacity-60"
+            className="CompaniesTicker_SectionHero__company__JHm0L !flex !items-center !justify-center w-fit !h-[4vw] sm:!ml-3 sm:!h-[1.55vw] xl:!h-6 2xl:!h-7 invert xl:!ml-6 opacity-60"
             src={"/colleges/mgh.svg"}
           />
         </div>
