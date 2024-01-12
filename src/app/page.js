@@ -124,28 +124,23 @@ export default function Home() {
     const menuItem = document.getElementById("menu");
 
     const line1 = document.getElementById("menuLine1");
-    const line2 = document.getElementById("menuLine2");
     const line3 = document.getElementById("menuLine3");
 
     function xIconAnimate(openState) {
       if (openState) {
-        line2.classList.remove("opacity-1");
-        line2.classList.add("opacity-0");
         line1.classList.remove("rotate-0");
         line3.classList.remove("rotate-0");
         line1.classList.add("rotate-45");
         line3.classList.add("-rotate-45");
         line1.classList.add("relative");
-        line1.classList.add("top-[1.25rem]");
+        line1.classList.add("top-[.85rem]");
       } else {
-        line2.classList.remove("opacity-0");
-        line2.classList.add("opacity-1");
         line1.classList.remove("rotate-45");
         line3.classList.remove("-rotate-45");
         line1.classList.add("rotate-0");
         line3.classList.add("rotate-0");
         line1.classList.remove("relative");
-        line1.classList.remove("top-[1.25rem]");
+        line1.classList.remove("top-[.85rem]");
       }
     }
 
@@ -170,17 +165,19 @@ export default function Home() {
         <div className="hero-wrapper cc-orange" style={{ backgroundColor: Colors.heroSectionSecondColor }}>
           <div className="nav-spacer flex items-center justify-between px-5 sm:px-20 lg:px-48 xl:px-72 gap-10">
             <img className="w-24 sm:w-32" src="/logo/eumaximo-high-res-black.png" />
-            <div
-              className={`flex flex-col gap-2 items-end cursor-pointer ${menuIsActive ? "z-[120]" : ""}`}
-              onClick={() => {
-                setMenuIsActive(!menuIsActive);
-              }}
-            >
-              <>
-                <div id="menuLine1" className="h-0.5 duration-500 bg-black w-7"></div>
-                <div id="menuLine2" className="h-0.5 duration-500 bg-black w-4"></div>
-                <div id="menuLine3" className="h-0.5 duration-500 bg-black w-7"></div>
-              </>
+            <div className="flex items-center justify-center">
+              <div className={`z-20 absolute bg-white w-20 h-20 rounded-full ${menuIsActive ? "duration-[2500ms] scale-[500]" : "duration-[800ms] scale-[0]"}`}></div>
+              <div
+                className={`flex flex-col justify-center items-center gap-2 cursor-pointer bg-[#111122] w-16 h-16 rounded-full ${menuIsActive ? "z-[120]" : ""}`}
+                onClick={() => {
+                  setMenuIsActive(!menuIsActive);
+                }}
+              >
+                <div className={`${menuIsActive ? "relative bottom-[0.4rem]" : null}`}>
+                  <div id="menuLine1" className="h-0.5 duration-500 mb-3 bg-white w-7"></div>
+                  <div id="menuLine3" className="h-0.5 duration-500 bg-white w-7"></div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="hero-title-flex-wrapper">
@@ -253,14 +250,15 @@ export default function Home() {
             <div className="nav-spacer g-pointer-events-none flex items-center justify-between px-5 sm:px-20 lg:px-48 xl:px-72 gap-10">
               <img className="w-24 sm:w-32" src="/logo/eumaximo-high-res-white.png" />
               <div
-                className="flex flex-col gap-2 items-end cursor-pointer"
+                className={`z-10 flex flex-col justify-center items-center gap-2 cursor-pointer bg-[#eace5d] w-16 h-16 rounded-full`}
                 onClick={() => {
                   setMenuIsActive(!menuIsActive);
                 }}
               >
-                <div className="h-0.5 bg-white w-7"></div>
-                <div className="h-0.5 bg-white w-4"></div>
-                <div className="h-0.5 bg-white w-7"></div>
+                <div>
+                  <div id="" className="h-0.5 duration-500 mb-3 bg-white w-7"></div>
+                  <div id="" className="h-0.5 duration-500 bg-white w-7"></div>
+                </div>
               </div>
             </div>
             <div className="hero-title-flex-wrapper">
