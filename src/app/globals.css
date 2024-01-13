@@ -20523,14 +20523,14 @@ a {
 
 .Button_Button--size-s__pw3fC {
   height: 20px;
-  padding: 0 5px;
+  padding: 0 3px;
   font-size: 16px;
   border-radius: 8px;
 }
 
 .Button_Button--size-m__DGRm_ {
-  height: 38px;
-  padding: 0 5px;
+  height: 30px !important;
+  padding: 0 5px !important;
   font-size: 16px;
   border-radius: 8px;
 }
@@ -22750,7 +22750,6 @@ img.Testimonials_Testimonial__logo__ezK0H {
   .Home_SectionHeader__buttons__jwSY4 {
     flex-flow: column;
     align-items: stretch;
-    width: 100%;
   }
 }
 
@@ -24932,15 +24931,15 @@ body {
 }
 
 .Button_Button--size-m__DGRm_ {
-  height: 48px;
-  padding: 0 5px;
+  height: 30px !important;
+  padding: 0 5px !important;
   font-size: 16px;
   border-radius: 8px;
 }
 
 .Button_Button--size-l__ia8eU {
-  height: 40px;
-  padding: 0 5px;
+  height: 35px;
+  padding: 0 5px !important;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -26781,9 +26780,6 @@ span.Breadcrumbs_Breadcrumbs__breadcrumb__Hq2NI {
 }
 
 @media (min-width: 640px) {
-  .ProductHeader_ProductHeader__buttons__0zKBi {
-    width: 350px;
-  }
 
   .ProductHeader_ProductHeader__buttons__0zKBi > * {
     flex-grow: 1;
@@ -26794,7 +26790,7 @@ span.Breadcrumbs_Breadcrumbs__breadcrumb__Hq2NI {
 
 @media (max-width: 640px) {
   .ProductHeader_ProductHeader__buttons__0zKBi {
-    flex-direction: column;
+    justify-content: center;
   }
 }
 

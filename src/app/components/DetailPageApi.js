@@ -79,7 +79,7 @@ on the same page with data modeling upstream of every app.`,
                               flexShrink: "unset",
                             }}
                           >
-                            Inscrever-se
+                            INSCREVER-SE
                           </a>
                         </div>
                       </div>
