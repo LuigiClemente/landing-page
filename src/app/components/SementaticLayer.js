@@ -21,7 +21,7 @@ function SementaticLayer({
         </h1>
         <p className="Home_SectionHeader__subtitle__pn9hg">{description}</p>
         <div className="Home_SectionHeader__buttons__jwSY4">
-          <a href="https://cubecloud.dev/auth/signup" className="Button_Button__VQ4Ej Button--appearance-light getStartedButton Button_Button--size-l__ia8eU">
+          <a href="https://cubecloud.dev/auth/signup" className="Button_Button__VQ4Ej Button--appearance-light getStartedButton Button_Button--size-l__ia8eU hover:bg-[#da3466]">
             INSCREVER-SE
           </a>
           {/* <a style={{visibility:'hidden'}} className="Button_Button__VQ4Ej Button_Button--appearance-dark__b0Eeg Button_Button--cherry__FCGeq Button_Button--size-l__ia8eU Button_Button--variant-outline__oaRuC" href="/contact">Request a demo</a> */}

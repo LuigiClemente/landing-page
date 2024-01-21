@@ -9,13 +9,13 @@ function HeroTitle({ color = "#F84F39", heading = "Supernatural ao", headingColo
       }}
       class="container-hero-title w-clearfix !max-w-xl !text-left"
     >
-      <h1 class="heading-large g-text-align-center g-display-inline-text">
+      <h1 class="heading-large g-text-align-center g-display-inline-text max-[400px]:text-[2.8rem]">
         {heading}
         <span class="g-visuallyhidden">team</span>
       </h1>
       <div class="handwritten-text-wrapper pt-4">
         <div class="hero-line-embed w-embed" style={{ display: "block" }}>
-          <img src="/title/anoitecer.png" className="relative max-sm:top-0 top-3 max-sm:right-24 max-sm:!w-64 sm:right-[6rem] md:w-[23.5rem]" />
+          <img src="/title/anoitecer.png" className="relative max-sm:top-0 top-3 max-sm:right-24 max-sm:!w-64 sm:right-[6rem] md:w-[23.5rem] max-[400px]:!w-[13rem] max-[365px]:right-[3rem] max-[400px]:right-[4rem]" />
         </div>
       </div>
     </div>
