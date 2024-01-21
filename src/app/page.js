@@ -174,7 +174,7 @@ export default function Home() {
               <div className={`z-20 absolute bg-white w-20 h-20 rounded-full ${menuIsActive ? "duration-[2500ms] scale-[500]" : "duration-[800ms] scale-[0]"}`}></div>
               <div
                 // className={`flex flex-col justify-center items-center gap-2 cursor-pointer bg-[#111122] w-16 h-16 rounded-full ${menuIsActive ? "z-[120]" : ""}`}
-                className={`flex flex-col justify-center items-center gap-2 cursor-pointer bg-[#008000] w-16 h-16 rounded-full ${menuIsActive ? "z-[120]" : ""} ${menuIsHovered ? 'animate-main-wrap transform transition-transform scale-110': ''} `}
+                className={`flex flex-col justify-center items-center gap-2 cursor-pointer bg-[#008000] w-[40px] h-[40px] rounded-full ${menuIsActive ? "z-[120]" : ""} ${menuIsHovered ? 'animate-main-wrap transform transition-transform scale-110': ''} `}
                 onClick={() => {
                   setMenuIsActive(!menuIsActive);
                   if (!menuIsActive) {
@@ -193,10 +193,10 @@ export default function Home() {
                 }}
               >
                 <div className={`${menuIsActive ? "relative bottom-[0.4rem]" : null}`}>
-                  <div id="menuLine1" className={`h-0.5 duration-500 mb-3 bg-black w-7 ${menuIsHovered ? "animate-top" : ""}`}></div>
-                  <div id="menuLine3" className={`h-0.5 duration-500 bg-black w-7 ${menuIsHovered ? "animate-bottom" : ""}`}></div>
-                  {/* <div id="menuLine1" className="h-0.5 duration-500 mb-3 bg-white w-7"></div>
-                  <div id="menuLine3" className="h-0.5 duration-500 bg-white w-7"></div> */}
+                  <div id="menuLine1" className={`h-0.5 duration-500 mb-2 bg-black w-4 ${menuIsHovered ? "animate-top" : ""}`}></div>
+                  <div id="menuLine3" className={`h-0.5 duration-500 bg-black w-4 ${menuIsHovered ? "animate-bottom" : ""}`}></div>
+                  {/* <div id="menuLine1" className="h-0.5 duration-500 mb-2 bg-white w-4"></div>
+                  <div id="menuLine3" className="h-0.5 duration-500 bg-white w-4"></div> */}
                 </div>
               </div>
             </div>
@@ -271,7 +271,7 @@ export default function Home() {
             <div className="nav-spacer g-pointer-events-none flex items-center justify-between px-5 sm:px-20 lg:px-48 xl:px-72 gap-10">
               <img className="w-24 sm:w-32" src="/logo/eumaximo-high-res-white.png" />
               <div
-                className={`z-10 flex flex-col justify-center items-center gap-2 cursor-pointer bg-[#eace5d] w-16 h-16 rounded-full ${menuIsHovered ? 'animate-main-wrap transform transition-transform scale-110': 'animate-main-wrap'}`}
+                className={`z-10 flex flex-col justify-center items-center gap-2 cursor-pointer bg-[#eace5d] w-[40px] h-[40px] rounded-full ${menuIsHovered ? 'animate-main-wrap transform transition-transform scale-110': 'animate-main-wrap'}`}
                 onClick={() => {
                   setMenuIsActive(!menuIsActive);
                 }}
@@ -283,8 +283,8 @@ export default function Home() {
                 }}
               >
                 <div>
-                  <div id="" className={`h-0.5 duration-500 mb-3 bg-black w-7 ${menuIsHovered ? "animate-top" : "animate-top"}`}></div>
-                  <div id="" className={`h-0.5 duration-500 bg-black w-7 ${menuIsHovered ? "animate-bottom" : "animate-bottom"}`}></div>
+                  <div id="" className={`h-0.5 duration-500 mb-2 bg-black w-4 ${menuIsHovered ? "animate-top" : "animate-top"}`}></div>
+                  <div id="" className={`h-0.5 duration-500 bg-black w-4 ${menuIsHovered ? "animate-bottom" : "animate-bottom"}`}></div>
                 </div>
               </div>
             </div>

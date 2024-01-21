@@ -5,7 +5,7 @@ const MobileSvg = () => {
     <svg viewBox="-5.49 -204.966 414.367 398.168" fill="none" className="CubeSchema_CubeSchema__svg--mobile__O_Rhn">
       <g
         className="output-lines-3-curved-mobile_svg__scheme-dash-animated"
-        stroke="#FF83A8"
+        stroke="red"
         stroke-dasharray="0.24 5.6"
         stroke-linecap="round"
         stroke-linejoin="round"

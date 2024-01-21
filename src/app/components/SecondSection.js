@@ -22,14 +22,15 @@ const SecondSection = ({
       borderColor: "#FFF9F0",
       title: "Caching",
       description: "Define and manage metrics upstream to consolidate your workflow, centralize definitions, and create a single source of truth.",
-      bottomIcon: "/card-icons/fat.svg",
+      bottomIcon: "/card-icons/sugar.svg",
+
     },
     {
       backgroundColor: "#FF0000",
       borderColor: "#FFC1D3",
       title: "Apis",
       description: "Define and manage metrics upstream to consolidate your workflow, centralize definitions, and create a single source of truth.",
-      bottomIcon: "/card-icons/sugar.svg",
+      bottomIcon: "/card-icons/fat.svg",
     },
   ],
   onPressReadMore,
@@ -112,7 +113,7 @@ const SecondSection = ({
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 83" fill="none" className="CubeSchema_CubeSchema__svg--mobile__O_Rhn">
             <g
               className="input-lines-7-mobile_svg__scheme-dash-animated"
-              stroke="#9592FF"
+              stroke="green"
               stroke-dasharray="0.24 5.6"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -224,7 +225,7 @@ const SecondSection = ({
           <a
             className="CubeSchema_CubeSchema__card__dzHa6 custom-cube custom-cube-3"
             style={{
-              "--card-bg": "#e9ce5d",
+              "--card-bg": "red",
               "--card-border": animationCards[2].borderColor,
               "--card-index": 2,
               "--card-offset": "0.5",
@@ -238,7 +239,7 @@ const SecondSection = ({
               <p className="CubeSchema_CubeSchema__card_content__K1bdM">{animationCards[2].description}</p>
             </div>
             <div className="CubeSchema_CubeSchema__card_footer__YU7RW">
-              <img className="CubeSchema_CubeSchema__card_badge__1a_FX w-6 sm:w-[2.6vw] xl:w-9" src={"/card-icons/fat.svg"} width="32" height="32" alt="Caching badge" />
+            <img className="CubeSchema_CubeSchema__card_badge__1a_FX w-9 sm:w-[4vw] xl:w-[3.2rem] xl:mt-11" src={"/card-icons/sugar.svg"} width="32" height="32" alt="APIs badge" />
               <div style={{ cursor: "pointer" }} onClick={() => onPressReadMore("Caching")} className="CubeSchema_CubeSchema__card_readMore__ovs9v">
                 Read more
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
@@ -250,7 +251,7 @@ const SecondSection = ({
           <a
             className="CubeSchema_CubeSchema__card__dzHa6 custom-cube custom-cube-4"
             style={{
-              "--card-bg": "#F84F39",
+              "--card-bg": "rgb(233, 206, 93)",
               "--card-border": animationCards[3].borderColor,
               "--card-index": 3,
               "--card-offset": "1.5",
@@ -264,7 +265,8 @@ const SecondSection = ({
               <p className="CubeSchema_CubeSchema__card_content__K1bdM">{animationCards[3].description}</p>
             </div>
             <div className="CubeSchema_CubeSchema__card_footer__YU7RW">
-              <img className="CubeSchema_CubeSchema__card_badge__1a_FX w-9 sm:w-[4vw] xl:w-[3.2rem] xl:mt-11" src={"/card-icons/sugar.svg"} width="32" height="32" alt="APIs badge" />
+            <img className="CubeSchema_CubeSchema__card_badge__1a_FX w-6 sm:w-[2.6vw] xl:w-9" src={"/card-icons/fat.svg"} width="32" height="32" alt="Caching badge" />
+             
               <div style={{ cursor: "pointer" }} onClick={() => onPressReadMore("Apis")} className="CubeSchema_CubeSchema__card_readMore__ovs9v">
                 Read more
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
