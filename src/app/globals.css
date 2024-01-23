@@ -29196,9 +29196,9 @@ ul {
 }
 
 .animate-main-wrap:hover .animate-top {
-  transform: translateY(14px);
+  transform: translateY(10px);
 }
 
 .animate-main-wrap:hover .animate-bottom {
-  transform: translateY(-14px);
+  transform: translateY(-10px);
 }

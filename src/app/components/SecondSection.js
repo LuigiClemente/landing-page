@@ -306,15 +306,15 @@ const SecondSection = ({
               d="M 12 95.051 L 84 95.051 C 90.63 95.051 96 100.421 96 107.051 L 96 179.051 C 96 185.681 90.63 191.051 84 191.051 L 12 191.051 C 5.37 191.051 0 185.681 0 179.051 L 0 107.051 C 0 100.421 5.37 95.051 12 95.051 Z"
               class="output-apps-1_svg__st0"
             />
-            <circle cx="18" cy="113.051" r="2" class="output-apps-1_svg__st1" />
+            {/* <circle cx="18" cy="113.051" r="2" class="output-apps-1_svg__st1" />
             <circle cx="26" cy="113.051" r="2" class="output-apps-1_svg__st1" />
-            <circle cx="34" cy="113.051" r="2" class="output-apps-1_svg__st1" />
+            <circle cx="34" cy="113.051" r="2" class="output-apps-1_svg__st1" /> */}
             {/* <path
               d="M 16 134.601 L 31.84 139.661 L 47.68 135.971 L 63.52 148.551 L 80 123.051 L 80 169.051 C 80 172.361 77.31 175.051 74 175.051 L 22 175.051 C 18.69 175.051 16 172.361 16 169.051 L 16 134.601 Z"
               fill="#69697c"
             /> */}
 
-            <g transform="translate(-60,220) scale(0.035,-0.035)"
+            <g transform="translate(-60,210) scale(0.035,-0.035)"
               fill="rgb(105, 105, 124)" stroke="none">
               <path d="M2487 2622 c-15 -16 -17 -49 -17 -255 l0 -237 385 0 385 0 0 235 c0
 222 -1 236 -20 255 -19 19 -33 20 -368 20 -325 0 -350 -1 -365 -18z m701 -239
@@ -345,7 +345,7 @@ l2 -203 -335 0 -335 0 0 198 c0 109 3 202 7 205 4 4 153 6 332 5 l326 -3 3
               d="M 12 225.928 L 84 225.928 C 90.63 225.928 96 231.298 96 237.928 L 96 309.928 C 96 316.558 90.63 321.928 84 321.928 L 12 321.928 C 5.37 321.928 0 316.558 0 309.928 L 0 237.928 C 0 231.298 5.37 225.928 12 225.928 Z"
               class="output-apps-1_svg__st0"
             />
-            <path d="M 48 225.978 L 48 321.978 M 0 273.928 L 96 273.928" class="output-apps-1_svg__st5" />
+            {/* <path d="M 48 225.978 L 48 321.978 M 0 273.928 L 96 273.928" class="output-apps-1_svg__st5" /> */}
             {/* <circle cx="40.44" cy="302.448" r="1.84" class="output-apps-1_svg__st1" color="white" />
             <circle cx="24.8" cy="305.208" r="1.84" class="output-apps-1_svg__st1" color="white" />
             <circle cx="35.84" cy="294.168" r="1.84" class="output-apps-1_svg__st1" color="white" />

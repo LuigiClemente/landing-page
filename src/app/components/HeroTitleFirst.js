@@ -15,8 +15,8 @@ function HeroTitleFirst({ color = "#F84F39", heading = "Supernatural ao", headin
           {heading} <span class="g-visuallyhidden">team</span>
         </h1>
         <div class="handwritten-text-wrapper">
-          <div class="hero-line-embed w-embed ml-[30px]" style={{ display: "block" }}>
-            <img src="/title/amanhecer.png" className="relative max-sm:top-5 max-sm:right-24 top-7 max-sm:!w-72 sm:right-[6rem] md:w-[27rem] max-[400px]:!w-[13rem] max-[365px]:right-[3rem] max-[400px]:right-[4rem]" />
+          <div class="hero-line-embed w-embed ml-[0px]" style={{ display: "block" }}>
+            <img src="/title/amanhecer.png" className="relative max-sm:top-5 max-sm:right-[5.5rem] top-7 max-sm:!w-72 sm:right-[6rem] md:w-[27rem] max-[400px]:!w-[13rem] max-[365px]:right-[2rem] max-[400px]:right-[2rem]" />
           </div>
         </div>
       </div>

@@ -127,7 +127,7 @@ export default function Home() {
     const line1 = document.getElementById("menuLine1");
     const line3 = document.getElementById("menuLine3");
 
-    if(menuIsActive === true){
+    if (!menuIsActive) {
       setMenuIsHovered(false)
     }
 
@@ -135,15 +135,15 @@ export default function Home() {
       if (openState) {
         line1.classList.remove("rotate-0");
         line3.classList.remove("rotate-0");
-        line1.classList.add("!rotate-45");
-        line3.classList.add("!-rotate-45");
+        line1.classList.add("rotate-45");
+        line3.classList.add("-rotate-45");
         line1.classList.add("relative");
         line1.classList.add("top-[.85rem]");
       } else {
-        line1.classList.remove("!rotate-45");
-        line3.classList.remove("!-rotate-45");
-        line1.classList.add("!rotate-0");
-        line3.classList.add("!rotate-0");
+        line1.classList.remove("rotate-45");
+        line3.classList.remove("-rotate-45");
+        line1.classList.add("rotate-0");
+        line3.classList.add("rotate-0");
         line1.classList.remove("relative");
         line1.classList.remove("top-[.85rem]");
       }
@@ -174,7 +174,7 @@ export default function Home() {
               <div className={`z-20 absolute bg-white w-20 h-20 rounded-full ${menuIsActive ? "duration-[2500ms] scale-[500]" : "duration-[800ms] scale-[0]"}`}></div>
               <div
                 // className={`flex flex-col justify-center items-center gap-2 cursor-pointer bg-[#111122] w-16 h-16 rounded-full ${menuIsActive ? "z-[120]" : ""}`}
-                className={`flex flex-col justify-center items-center gap-2 cursor-pointer bg-[#008000] w-[40px] h-[40px] rounded-full ${menuIsActive ? "z-[120]" : ""} ${menuIsHovered ? 'animate-main-wrap transform transition-transform scale-110': ''} `}
+                className={`flex flex-col justify-center items-center gap-2 cursor-pointer bg-[#008000] w-[40px] h-[40px] rounded-full ${menuIsActive ? "z-[120]" : "z-[10]"} ${menuIsHovered ? 'animate-main-wrap transform transition-transform scale-110' : ''}`}
                 onClick={() => {
                   setMenuIsActive(!menuIsActive);
                   if (!menuIsActive) {
@@ -271,7 +271,7 @@ export default function Home() {
             <div className="nav-spacer g-pointer-events-none flex items-center justify-between px-5 sm:px-20 lg:px-48 xl:px-72 gap-10">
               <img className="w-24 sm:w-32" src="/logo/eumaximo-high-res-white.png" />
               <div
-                className={`z-10 flex flex-col justify-center items-center gap-2 cursor-pointer bg-[#eace5d] w-[40px] h-[40px] rounded-full ${menuIsHovered ? 'animate-main-wrap transform transition-transform scale-110': 'animate-main-wrap'}`}
+                className={`z-10 flex flex-col justify-center items-center gap-2 cursor-pointer bg-[#eace5d] w-[40px] h-[40px] rounded-full ${menuIsHovered ? 'animate-main-wrap transform transition-transform scale-110' : ''}`}
                 onClick={() => {
                   setMenuIsActive(!menuIsActive);
                 }}
@@ -283,8 +283,8 @@ export default function Home() {
                 }}
               >
                 <div>
-                  <div id="" className={`h-0.5 duration-500 mb-2 bg-black w-4 ${menuIsHovered ? "animate-top" : "animate-top"}`}></div>
-                  <div id="" className={`h-0.5 duration-500 bg-black w-4 ${menuIsHovered ? "animate-bottom" : "animate-bottom"}`}></div>
+                  <div id="" className={`h-0.5 duration-500 mb-2 bg-black w-4 ${menuIsHovered ? "translate-y-[10px]" : ""}`}></div>
+                  <div id="" className={`h-0.5 duration-500 bg-black w-4 ${menuIsHovered ? "-translate-y-[10px]" : ""}`}></div>
                 </div>
               </div>
             </div>
