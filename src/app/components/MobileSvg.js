@@ -5,7 +5,7 @@ const MobileSvg = () => {
     <svg viewBox="-5.49 -204.966 414.367 398.168" fill="none" className="CubeSchema_CubeSchema__svg--mobile__O_Rhn">
       <g
         className="output-lines-3-curved-mobile_svg__scheme-dash-animated"
-        stroke="red"
+        stroke="rgb(233, 206, 93)"
         stroke-dasharray="0.24 5.6"
         stroke-linecap="round"
         stroke-linejoin="round"
@@ -40,7 +40,7 @@ const MobileSvg = () => {
           d="M 105.552 7.546 L 121.392 12.606 L 137.232 8.916 L 153.072 21.496 L 169.552 -3.994 L 169.552 42.006 C 169.552 45.316 166.862 48.006 163.552 48.006 L 111.552 48.006 C 108.242 48.006 105.552 45.316 105.552 42.006 L 105.552 7.546 Z"
           fill="rgb(105, 105, 124)"
         /> */}
-        <g transform="translate(28,80) scale(0.035,-0.035)"
+        <g transform="translate(-32,120) scale(0.055,-0.055)"
           fill="rgb(105, 105, 124)" stroke="none">
           <path d="M2487 2622 c-15 -16 -17 -49 -17 -255 l0 -237 385 0 385 0 0 235 c0
 222 -1 236 -20 255 -19 19 -33 20 -368 20 -325 0 -350 -1 -365 -18z m701 -239

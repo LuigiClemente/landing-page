@@ -406,7 +406,7 @@ export default function Home() {
           <img width={40} src="https://assets-global.website-files.com/625593a881b8ebd169835ca5/6272dd170459e2734bd53502_handlebar.svg" alt="" className="handlebar_image" />
         </div>
       </section>
-      <div style={{ marginTop: "4%" }}></div>
+      {/* <div style={{ marginTop: "4%" }}></div> */}
       <SementaticLayer {...secondSectionTopData} />
       <Logo />
 
@@ -435,10 +435,10 @@ export default function Home() {
             </DetailPageApi>
           )}
         </div>
-        <FragmentsSvg />
+        {/* <FragmentsSvg /> */}
       </div>
       <div style={{ marginBottom: "4%" }}></div>
-      <footer id="signup" data-w-id="8912e0d8-13fa-7635-fd54-54fc5e19c5a3" className="footer">
+      <footer id="signup" data-w-id="8912e0d8-13fa-7635-fd54-54fc5e19c5a3" className="footer footerNew">
         <div className="footer-shape w-embed">
           <svg width="100%" viewBox="0 0 1577 4307" fill="none" className=" relative sm:z-10" xmlns="http://www.w3.org/2000/svg">
             <path fill={Colors.footerColor}>

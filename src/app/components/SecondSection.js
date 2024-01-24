@@ -144,7 +144,7 @@ const SecondSection = ({
             <defs>
               <linearGradient id="gradient-1" x1="56" x2="436.8" y1="238.415" y2="238.415" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1, 0, 0, 1, 4.586182, 2.389873)">
                 <stop stop-color="green" />
-                <stop offset="1" stop-color="red" />
+                <stop offset="1" stop-color="rgb(233, 206, 93)" />
               </linearGradient>
             </defs>
             <g transform="matrix(0.045888, 0, 0, 0.046198, 199.458374, 9.486949)">
@@ -280,7 +280,7 @@ const SecondSection = ({
           <svg viewBox="0 0 152 424" fill="none" className="CubeSchema_CubeSchema__svg--desktop__fDVWm" xmlns="http://www.w3.org/2000/svg">
             <g
               className="output-lines-3-curved_svg__scheme-dash-animated"
-              stroke="red"
+              stroke="rgb(233, 206, 93)"
               stroke-dasharray="0.24 5.6"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -314,7 +314,7 @@ const SecondSection = ({
               fill="#69697c"
             /> */}
 
-            <g transform="translate(-60,210) scale(0.035,-0.035)"
+            <g transform="translate(-125,250) scale(0.055,-0.055)"
               fill="rgb(105, 105, 124)" stroke="none">
               <path d="M2487 2622 c-15 -16 -17 -49 -17 -255 l0 -237 385 0 385 0 0 235 c0
 222 -1 236 -20 255 -19 19 -33 20 -368 20 -325 0 -350 -1 -365 -18z m701 -239

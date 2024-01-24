@@ -13,7 +13,7 @@ function SementaticLayer({
       style={{ "-section_padding_top": "0px", "-section_padding_bottom": "0px", background: "transparent", marginBottom: "8vh" }}
       className="Page_Section__WvViv Page_Section--appearance-dark__Qf_N8 Page_Section--gap-xl__E8tSh Home_SectionHeader__RGl79"
     >
-      <div className="Page_SectionContent__Ztn5n SectionContent--align-none Page_SectionContent--size-m__E6wuQ Section--gap-none Home_SectionHeader__content__7eSBQ">
+      <div className="Page_SectionContent__Ztn5n SectionContent--align-none Page_SectionContent--size-m__E6wuQ Section--gap-none Home_SectionHeader__content__7eSBQ" style={{marginTop:'5vh'}}>
         <h1 className="Home_SectionHeader__title__aBhZ4">
           {title?.split("<>")[0]}
           <br />

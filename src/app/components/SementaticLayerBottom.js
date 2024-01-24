@@ -15,7 +15,7 @@ function SementaticLayerBottom({
 
   return (
     <div
-      style={{ marginTop: "5vh", scale: "0.87", marginBottom: "25vh" }}
+      style={{ marginTop: "5vh", scale: "0.97", marginBottom: "2vh" }}
       className="Page_SectionHeader__eXcwE Home_SectionHero__whatIs__KSXfn Page_SectionHeader--appearance-dark__hGYCv SectionHeader--level-h2"
     >
       <h2 className="Page_SectionHeader__title__tIV1t">{title}</h2>
